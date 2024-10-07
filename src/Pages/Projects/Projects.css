@@ -187,5 +187,18 @@
 }
 
 body {
-  padding-top: 0;
+  padding-top: 0px;
+}
+
+.AboutSec {
+  padding-top: 50px;
+  background-image: radial-gradient(
+    circle closest-corner at 50% 0,
+    #64d3ff60,
+    #0000
+  );
+}
+
+.LinkTest {
+  text-decoration: underline;
 }

@@ -16,8 +16,7 @@ function Projects() {
     navigate(-1);
   };
   return (
-    <div>
-      <div className="section-banner"></div>
+    <div className="AboutSec">
       <div className="button-project-back" onClick={handleBack}>
         {" "}
         <div>

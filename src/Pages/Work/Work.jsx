@@ -141,7 +141,7 @@ function Work() {
       <br />
       <div className="projectSection">
         <div className="card">
-          <Link to="/Projects">
+          <Link to="/Projects2" className="LinkTest">
             <div className="project-card-outline">
               <div className="project-card-outline2">
                 <div className="CardHead">
@@ -150,7 +150,7 @@ function Work() {
                       Stadia Bluetooth
                     </div>
                     <div className="text-projectcard-description">
-                      Giving a second life to over a million controllers.
+                      Giving a second life to over a million cont
                     </div>
                   </div>
                   <div>
@@ -166,67 +166,78 @@ function Work() {
         </div>
 
         <div className="card">
-          <div class="project-card-outline">
-            <div class="project-card-outline2">
-              <div className="CardHead">
-                <div>
-                  <div className="text-projectcard-title">Stadia Bluetooth</div>
-                  <div className="text-projectcard-description ">
-                    Giving a second life to over a million controllers.
+          <Link to="/Projects3" className="LinkTest">
+            <div className="project-card-outline">
+              <div className="project-card-outline2">
+                <div className="CardHead">
+                  <div>
+                    <div className="text-projectcard-title">
+                      Stadia Bluetooth
+                    </div>
+                    <div className="text-projectcard-description">
+                      Giving a second life to over a million cont
+                    </div>
+                  </div>
+                  <div>
+                    <img src={Arrow} className="Arrow" alt="Logo" />
                   </div>
                 </div>
-                <div>
-                  <img src={Arrow} className="Arrow" alt="Logo" />
+                <div className="Project_img">
+                  <img src={Project1} className="Arrow32" alt="Logo" />
                 </div>
               </div>
-              <div className="Project_img">
-                <img src={Project1} className="Arrow32" alt="Logo" />
-              </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
       <div className="projectSection">
         <div className="card">
-          <div class="project-card-outline">
-            <div class="project-card-outline2">
-              <div className="CardHead">
-                <div>
-                  <div className="text-projectcard-title">Stadia Bluetooth</div>
-                  <div className="text-projectcard-description ">
-                    Giving a second life to over a million controllers.
+          <Link to="/Projects4" className="LinkTest">
+            <div className="project-card-outline">
+              <div className="project-card-outline2">
+                <div className="CardHead">
+                  <div>
+                    <div className="text-projectcard-title">
+                      Stadia Bluetooth
+                    </div>
+                    <div className="text-projectcard-description">
+                      Giving a second life to over a million cont
+                    </div>
+                  </div>
+                  <div>
+                    <img src={Arrow} className="Arrow" alt="Logo" />
                   </div>
                 </div>
-                <div>
-                  <img src={Arrow} className="Arrow" alt="Logo" />
+                <div className="Project_img">
+                  <img src={Project1} className="Arrow32" alt="Logo" />
                 </div>
               </div>
-              <div className="Project_img">
-                <img src={Project1} className="Arrow32" alt="Logo" />
-              </div>
             </div>
-          </div>
+          </Link>
         </div>
-
         <div className="card">
-          <div class="project-card-outline">
-            <div class="project-card-outline2">
-              <div className="CardHead">
-                <div>
-                  <div className="text-projectcard-title">Stadia Bluetooth</div>
-                  <div className="text-projectcard-description ">
-                    Giving a second life to over a million controllers.
+          <Link to="/Projects" className="LinkTest">
+            <div className="project-card-outline">
+              <div className="project-card-outline2">
+                <div className="CardHead">
+                  <div>
+                    <div className="text-projectcard-title">
+                      Stadia Bluetooth
+                    </div>
+                    <div className="text-projectcard-description">
+                      Giving a second life to over a million cont
+                    </div>
+                  </div>
+                  <div>
+                    <img src={Arrow} className="Arrow" alt="Logo" />
                   </div>
                 </div>
-                <div>
-                  <img src={Arrow} className="Arrow" alt="Logo" />
+                <div className="Project_img">
+                  <img src={Project1} className="Arrow32" alt="Logo" />
                 </div>
               </div>
-              <div className="Project_img">
-                <img src={Project1} className="Arrow32" alt="Logo" />
-              </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
       <div className="bigtextwrap">

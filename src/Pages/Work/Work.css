@@ -834,3 +834,7 @@ tbody td {
   display: flex;
   justify-content: center;
 }
+
+.LinkTest {
+  text-decoration: none !important;
+}
