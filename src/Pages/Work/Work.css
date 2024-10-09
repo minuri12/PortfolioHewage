@@ -41,7 +41,7 @@
   align-items: center;
   justify-content: space-between;
   display: flex;
-  padding-top: 200px;
+  padding-top: 150px;
 }
 
 .switch input {
@@ -837,4 +837,8 @@ tbody td {
 
 .LinkTest {
   text-decoration: none !important;
+}
+
+.logo-block .logomark2 {
+  width: 45px;
 }

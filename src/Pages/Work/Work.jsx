@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import Navbar from "../../Components/Navbar/Navbar";
 import Logo from "../../Assets/Logo.png";
 import Minuri from "../../Assets/Minuri.png";
-import Mini_Logo from "../../Assets/Mini-Logo.png";
+import Mini_Logo from "../../Assets/Mini_Logo.png";
 import email from "../../Assets/email.png";
 import instergram from "../../Assets/instagram.png";
 import sky from "../../Assets/Sky.jpg";
@@ -14,6 +14,7 @@ import Arrow from "../../Assets/right-arrow.png";
 import Arrow2 from "../../Assets/Arrow2.png";
 import Project1 from "../../Assets/Project1.png";
 import flyers from "../../Assets/flyers.png";
+import behance from "../../Assets/behance.png";
 import "./Work.css";
 
 function Work() {
@@ -43,11 +44,9 @@ function Work() {
       <div className="pagecontent">
         <div>
           <div className="main-head">
-            {isBatMan ? "Developer" : "Crafting seamless experiences by day,"}
+            Solving real-world problems through elegant
           </div>
-          <div className="Second-head">
-            {isBatMan ? "Heroic by night..." : "Batman by night..."}
-          </div>
+          <div className="Second-head">code and design...</div>
         </div>
 
         <div className="Date-time-section">
@@ -71,7 +70,7 @@ function Work() {
         <div className="part_one ">
           <div className="first_bar">
             <div className="logo-block">
-              <img src={Mini_Logo} className="logomark" alt="Logo" />
+              <img src={Mini_Logo} className="logomark2" alt="Logo" />
               <div className="LogoText">
                 <div className="text-logo">Hey, I’m Minuri.</div>
                 <div className="text-underlogo">Developer</div>
@@ -79,22 +78,32 @@ function Work() {
             </div>
             <div className="button_section">
               <div className="Logo_Social1">
-                <img src={email} className="logomark" alt="Logo" />
+                <a href="https://www.behance.net/minurihewage" target="_blank">
+                  <img src={behance} className="logomark" alt="Logo" />
+                </a>
               </div>
+
               <div className="Logo_Social2">
-                <img src={instergram} className="logomark" alt="Logo" />
+                <a
+                  href="https://www.instagram.com/minuri_senara/?next=%2F"
+                  target="_blank"
+                >
+                  <img src={instergram} className="logomark" alt="Logo" />{" "}
+                </a>
               </div>
-              <div className="Touch">Get In Touch</div>
+              <a href="mailto:minurisenara@gmail.com" className="contactbtn">
+                <div className="Touch">Get In Touch</div>
+              </a>
             </div>
           </div>
           <div className="head_name">
-            Obsessed with creating <span>timeless</span>
-            <br /> digital experiences with Framer.
+            Obsessed with crafting <span>seamless </span>
+            <br /> software solutions.
           </div>
           <div className="description">
-            Hey, I'm Mika, welcome to my world. I love building beautiful,
-            timeless
-            <br /> websites & digital experiences with Framer.
+            Hey, I'm Minuri, welcome to my world. I love building innovative and
+            scalable
+            <br /> software solutions that solve real-world problems.
           </div>
           <br />
         </div>
