@@ -138,10 +138,11 @@ function Work() {
             </div>
 
             <div className="description seconDes">
-              I create unique digital experiences tailored to your brand and
-              goals. By merging creativity with functionality and staying ahead
-              of design trends, I ensure every project not only looks stunning
-              but also performs flawlessly.
+              I create unique software solutions with a strong focus on user
+              experience, tailored to your needs and objectives. By merging
+              creativity with functionality and leveraging cutting-edge
+              technologies, I ensure every project not only works seamlessly but
+              also delivers an exceptional user experience.
             </div>
           </div>
         </div>
@@ -155,11 +156,9 @@ function Work() {
               <div className="project-card-outline2">
                 <div className="CardHead">
                   <div>
-                    <div className="text-projectcard-title">
-                      Stadia Bluetooth
-                    </div>
+                    <div className="text-projectcard-title">Trophy</div>
                     <div className="text-projectcard-description">
-                      Giving a second life to over a million cont
+                      Non-monetary token-based mobile application.
                     </div>
                   </div>
                   <div>
@@ -251,7 +250,7 @@ function Work() {
       </div>
       <div className="bigtextwrap">
         <div className="Bigtext1">
-          Designer with a passion for<span> shaping </span>the digital world.
+          Crafting the future as a<span> passionate </span> Software Engineer.
         </div>
       </div>
       <div className="Volhead">Other Projects</div>
