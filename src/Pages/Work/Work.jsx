@@ -153,7 +153,7 @@ function Work() {
       <div className="Volhead">My Projects</div>
       <br />
       <div className="projectSection">
-        <div className="card">
+        <div className="card card1">
           <Link to="/Projects2" className="LinkTest">
             <div className="project-card-outline">
               <div className="project-card-outline2">
@@ -176,7 +176,7 @@ function Work() {
           </Link>
         </div>
 
-        <div className="card">
+        <div className="card card2">
           <Link to="/Projects3" className="LinkTest">
             <div className="project-card-outline">
               <div className="project-card-outline2">
@@ -222,7 +222,7 @@ function Work() {
             </div>
           </Link>
         </div>
-        <div className="card">
+        <div className="card card3">
           <Link to="/Projects" className="LinkTest">
             <div className="project-card-outline">
               <div className="project-card-outline2">

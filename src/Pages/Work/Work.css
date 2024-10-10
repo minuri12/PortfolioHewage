@@ -446,6 +446,29 @@ input:checked + .slider {
   );
 }
 
+.card1:hover {
+  background: linear-gradient(
+    to bottom,
+    rgba(228, 139, 5, 0.726),
+    rgba(255, 255, 255, 0) 90%
+  );
+}
+
+.card2:hover {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 4, 49, 0.788),
+    rgba(255, 255, 255, 0) 90%
+  );
+}
+
+.card3:hover {
+  background: linear-gradient(
+    to bottom,
+    rgba(17, 182, 2, 0.651),
+    rgba(255, 255, 255, 0) 90%
+  );
+}
 .Project_img img,
 .CardHead img {
   transition: transform 0.3s ease;
