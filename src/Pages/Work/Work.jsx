@@ -13,6 +13,9 @@ import Minuri3 from "../../Assets/Minuri3.png";
 import Arrow from "../../Assets/right-arrow.png";
 import Arrow2 from "../../Assets/Arrow2.png";
 import Project1 from "../../Assets/Project1.png";
+import Project2 from "../../Assets/Project2.png";
+import Project3 from "../../Assets/Project3.png";
+import Project4 from "../../Assets/Project4.png";
 import flyers from "../../Assets/flyers.png";
 import behance from "../../Assets/behance.png";
 import "./Work.css";
@@ -179,11 +182,9 @@ function Work() {
               <div className="project-card-outline2">
                 <div className="CardHead">
                   <div>
-                    <div className="text-projectcard-title">
-                      Stadia Bluetooth
-                    </div>
+                    <div className="text-projectcard-title">MoodWave</div>
                     <div className="text-projectcard-description">
-                      Giving a second life to over a million cont
+                      Check the emotions of the music.
                     </div>
                   </div>
                   <div>
@@ -191,7 +192,7 @@ function Work() {
                   </div>
                 </div>
                 <div className="Project_img">
-                  <img src={Project1} className="Arrow32" alt="Logo" />
+                  <img src={Project2} className="Arrow32" alt="Logo" />
                 </div>
               </div>
             </div>
@@ -205,11 +206,9 @@ function Work() {
               <div className="project-card-outline2">
                 <div className="CardHead">
                   <div>
-                    <div className="text-projectcard-title">
-                      Stadia Bluetooth
-                    </div>
+                    <div className="text-projectcard-title">EDU</div>
                     <div className="text-projectcard-description">
-                      Giving a second life to over a million cont
+                      Online Learning and Teaching Platform
                     </div>
                   </div>
                   <div>
@@ -217,7 +216,7 @@ function Work() {
                   </div>
                 </div>
                 <div className="Project_img">
-                  <img src={Project1} className="Arrow32" alt="Logo" />
+                  <img src={Project3} className="Arrow32" alt="Logo" />
                 </div>
               </div>
             </div>
@@ -229,11 +228,9 @@ function Work() {
               <div className="project-card-outline2">
                 <div className="CardHead">
                   <div>
-                    <div className="text-projectcard-title">
-                      Stadia Bluetooth
-                    </div>
+                    <div className="text-projectcard-title">Nexo</div>
                     <div className="text-projectcard-description">
-                      Giving a second life to over a million cont
+                      E-commerce Platform
                     </div>
                   </div>
                   <div>
@@ -241,7 +238,7 @@ function Work() {
                   </div>
                 </div>
                 <div className="Project_img">
-                  <img src={Project1} className="Arrow32" alt="Logo" />
+                  <img src={Project4} className="Arrow32" alt="Logo" />
                 </div>
               </div>
             </div>
