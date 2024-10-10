@@ -199,6 +199,20 @@ body {
   );
 }
 
+.AboutSec1 {
+  padding-top: 50px;
+  background-image: radial-gradient(
+    circle closest-corner at 50% 0,
+    rgba(228, 139, 5, 0.541),
+    #0000
+  );
+  z-index: -100;
+}
+
 .LinkTest {
   text-decoration: underline;
+}
+
+.cover {
+  height: 800px;
 }

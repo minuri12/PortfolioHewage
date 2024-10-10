@@ -15,6 +15,9 @@ import Reacts from "../../Assets/React.png";
 import XD from "../../Assets/Xd.png";
 import figma from "../../Assets/figma.png";
 import node from "../../Assets/Node.png";
+import PHP from "../../Assets/PHP.png";
+import Dart from "../../Assets/Dart.png";
+import Firebase from "../../Assets/Firebase.png";
 import Me from "../../Assets/Me.png";
 function Info() {
   const location = useLocation(); // Get the current location
@@ -95,7 +98,8 @@ function Info() {
       <br />
       <br />
       <div class="text-hero info-hero">
-        I am passionate about crafting products that inspire and elevate
+        I am passionate about developing software solutions that inspire and
+        elevate
         <span class="text-info-hero-serif"> user experiences.</span>
       </div>
 
@@ -163,10 +167,13 @@ function Info() {
             <img src={css} className="Tech" alt="Logo" />
             <img src={js} className="Tech" alt="Logo" />
             <img src={node} className="Tech" alt="Logo" />
+            <img src={PHP} className="Tech" alt="Logo" />
             <img src={Reacts} className="Tech" alt="Logo" />
             <img src={flutter} className="Tech" alt="Logo" />
+            <img src={Dart} className="Tech" alt="Logo" />
             <img src={mongo} className="Tech" alt="Logo" />
             <img src={Mysql} className="Tech" alt="Logo" />
+            <img src={Firebase} className="Tech" alt="Logo" />
             <img src={XD} className="Tech" alt="Logo" />
             <img src={figma} className="Tech figma" alt="Logo" />
             <img src={PS} className="Tech" alt="Logo" />

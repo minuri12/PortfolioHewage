@@ -1,6 +1,6 @@
 import "./Projects.css";
 import Arrow from "../../Assets/right-arrow.png";
-import Project1 from "../../Assets/Project1.png";
+import Procover1 from "../../Assets/Project1Cover.png";
 import pro1 from "../../Assets/Pro1.png";
 import ProImg from "../../Assets/ProImg.png";
 import React from "react";
@@ -16,7 +16,7 @@ function Projects() {
     navigate(-1);
   };
   return (
-    <div className="AboutSec">
+    <div className="AboutSec1">
       <div className="button-project-back" onClick={handleBack}>
         {" "}
         <div>
@@ -27,11 +27,15 @@ function Projects() {
 
       <div className="text-hero project-title">Trophy</div>
       <div className="text-projectpage-year">
-        Google, Stadia — September '22
+        Non-monetary token-based mobile application.
       </div>
 
-      <div className="Project_img">
-        <img src={Project1} className="Arrow32" alt="Screenshot of Project 1" />
+      <div className="Project_img cover">
+        <img
+          src={Procover1}
+          className="Procover"
+          alt="Screenshot of Project 1"
+        />
       </div>
 
       <div className="container-overview">
@@ -206,7 +210,7 @@ function Projects() {
             </div>
             <div className="Project_img">
               <img
-                src={Project1}
+                src={Procover1}
                 className="Arrow32"
                 alt="Stadia Bluetooth Project"
               />
