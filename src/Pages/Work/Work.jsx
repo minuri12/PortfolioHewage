@@ -260,41 +260,73 @@ function Work() {
               <th>Name</th>
               <th>Description</th>
               <th>Team</th>
-              <th>Work</th>
+              <th>My Role</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Trophy</td>
-              <td>Trophy is one of the mobile applications related to HR.</td>
+              <td>MyJourney</td>
+              <td>
+                {" "}
+                Travel planning app that simplifies the process based on your
+                traveler category and budget.
+              </td>
               <td>Disara</td>
-              <td>Prototype, Frontend, Backend</td>
+              <td>Prototype, Frontend</td>
             </tr>
             <tr>
-              <td>Trophy</td>
-              <td>Trophy is one of the mobile applications related to HR.</td>
-              <td>Disara</td>
-              <td>Prototype, Frontend, Backend</td>
-            </tr>
-
-            <tr>
-              <td>Trophy</td>
-              <td>Trophy is one of the mobile applications related to HR.</td>
-              <td>Disara</td>
+              <td>Helping Hand</td>
+              <td>Hospital Management System</td>
+              <td>-</td>
               <td>Prototype, Frontend, Backend</td>
             </tr>
 
             <tr>
-              <td>Trophy</td>
-              <td>Trophy is one of the mobile applications related to HR.</td>
-              <td>Disara</td>
+              <td>ShopSense</td>
+              <td>
+                Mobile app leveraging AI to enhance online clothing shopping for
+                the visually impaired, with an admin panel for sellers.
+              </td>
+              <td>
+                Disara
+                <br />
+                Dushyantha
+              </td>
+              <td>Prototype, Frontend</td>
+            </tr>
+
+            <tr>
+              <td>Industrial Chemistry</td>
+              <td>
+                Mobile application for learning Chemistry for Advanced Level
+                students.
+              </td>
+              <td>Manuri</td>
+              <td>IdearMart App</td>
+            </tr>
+            <tr>
+              <td>My Portfolio Website</td>
+              <td>Developed the website using React and CSS.</td>
+              <td>-</td>
               <td>Prototype, Frontend, Backend</td>
             </tr>
             <tr>
-              <td>Trophy</td>
-              <td>Trophy is one of the mobile applications related to HR.</td>
+              <td>Haven</td>
+              <td>
+                AI-powered, web-based platform that utilizes AI and virtual
+                reality (VR) technology to promote mental well-being.{" "}
+              </td>
               <td>Disara</td>
-              <td>Prototype, Frontend, Backend</td>
+              <td>Prototype, Frontend</td>
+            </tr>
+            <tr>
+              <td>Market Management System</td>
+              <td>
+                Developed a system for managing the billing process for a
+                supermarket.
+              </td>
+              <td>-</td>
+              <td>Frontend, Backend</td>
             </tr>
           </tbody>
         </table>
@@ -322,9 +354,8 @@ function Work() {
             </div>
 
             <div className="description seconDes">
-              Let's collaborate and craft something extraordinary together.
-              Whether you're envisioning a project or simply want to reach out,
-              I'm always excited about new opportunities and conversatio
+              Let’s collaborate to create something exceptional! I'm excited to
+              connect over new opportunities in software engineering.
             </div>
             <div className="sentmailbtn">
               <a href="mailto:minurisenara@gmail.com" className="contactbtn">
