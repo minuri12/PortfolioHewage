@@ -154,7 +154,7 @@ function Work() {
       <br />
       <div className="projectSection">
         <div className="card card1">
-          <Link to="/Projects2" className="LinkTest">
+          <Link to="/Projects" className="LinkTest">
             <div className="project-card-outline">
               <div className="project-card-outline2">
                 <div className="CardHead">
@@ -177,7 +177,7 @@ function Work() {
         </div>
 
         <div className="card card2">
-          <Link to="/Projects3" className="LinkTest">
+          <Link to="/Projects2" className="LinkTest">
             <div className="project-card-outline">
               <div className="project-card-outline2">
                 <div className="CardHead">
@@ -201,7 +201,7 @@ function Work() {
       </div>
       <div className="projectSection">
         <div className="card">
-          <Link to="/Projects4" className="LinkTest">
+          <Link to="/Projects3" className="LinkTest">
             <div className="project-card-outline">
               <div className="project-card-outline2">
                 <div className="CardHead">

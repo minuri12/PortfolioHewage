@@ -1,10 +1,27 @@
 import "./Projects.css";
 import Arrow from "../../Assets/right-arrow.png";
+import { Link, useLocation } from "react-router-dom";
 import Project1 from "../../Assets/Project1.png";
+import Project3 from "../../Assets/Project3.png";
 import pro1 from "../../Assets/Pro1.png";
+import Procover2 from "../../Assets/Project2Cover.png";
 import ProImg from "../../Assets/ProImg.png";
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import Ai from "../../Assets/Ai.png";
+import css from "../../Assets/CSS.png";
+import flutter from "../../Assets/Flutter.png";
+import html from "../../Assets/HTML.png";
+import js from "../../Assets/JS.png";
+import Mysql from "../../Assets/MySql.png";
+import figma from "../../Assets/figma.png";
+import PHP from "../../Assets/PHP.png";
+import Gemini from "../../Assets/Gemini.png";
+import Boost from "../../Assets/Boost.png";
+import Miro from "../../Assets/Miro.png";
+import ProScreen01 from "../../Assets/Pro2Screen01.png";
+import ProScreen02 from "../../Assets/Pro2Screen02.png";
+import ProScreen03 from "../../Assets/Pro2Screen03.png";
 
 function Projects() {
   const navigate = useNavigate();
@@ -16,7 +33,7 @@ function Projects() {
     navigate(-1);
   };
   return (
-    <div className="AboutSec">
+    <div className="AboutSec2">
       <div className="button-project-back" onClick={handleBack}>
         {" "}
         <div>
@@ -25,13 +42,17 @@ function Projects() {
         <div className="text-button">Back</div>
       </div>
 
-      <div className="text-hero project-title">Trophy</div>
+      <div className="text-hero project-title">MoodWave</div>
       <div className="text-projectpage-year">
-        Google, Stadia — September '22
+        Check the emotions of the music.
       </div>
 
-      <div className="Project_img">
-        <img src={Project1} className="Arrow32" alt="Screenshot of Project 1" />
+      <div className="Project_img cover">
+        <img
+          src={Procover2}
+          className="Procover"
+          alt="Screenshot of Project 1"
+        />
       </div>
 
       <div className="container-overview">
@@ -45,19 +66,18 @@ function Projects() {
               <span className="text-highlighted-body">
                 Developer , UI/UX designer
               </span>{" "}
-              — Working on Prototype , Complete the Activities,Hachathon,Sports
-              , Clubs section of the Application
+              — Working on Prototype , FrontEnd
             </div>
           </div>
           <br />
           <div className="overview-text-wrapper">
             <div className="text-overview-overline">Team</div>
             <div className="text-projectpage-body team">
-              Disara Mapalagama
+              Jayaru Perera
               <br />
-              Navindu
+              Kushan Andarawava
               <br />
-              Dushyantha
+              K.Sathursana
             </div>
           </div>{" "}
           <br />
@@ -73,17 +93,18 @@ function Projects() {
           <div className="overview-text-wrapper">
             <div className="text-overview-overline">Overview</div>
             <div className="text-projectpage-body">
-              “Trophy” is a non-monetary token-based employee loyalty rewarding
-              mobile application solution to maintain the company’s employees’
-              sense of community and improve the team member experience in the
-              office with more interactivity, inclusivity, and motivation.
+              MoodWave is a personalized music platform that connects songs to
+              the emotions they evoke, offering a unique listening experience
+              tailored to each user's mood. By tagging songs with emotions,
+              users contribute to an emotional database that powers the
+              platform's emotion recognition technology.
               <br />
               <br />
-              Trophy is gamified to give a sense of relaxation to the employees
-              by collecting the tokens, which are named “Coins”. The company’s
-              top management decides the value of a Coin, how many tokens can be
-              earned by each activity, and how and when employees are allowed to
-              redeem the tokens.
+              The platform rewards user engagement through points, badges, and
+              challenges, fostering friendly competition on leaderboards. With
+              social media integration, users can share their emotional music
+              journey, creating a vibrant, connected community around music and
+              emotion.
               <br />
             </div>
           </div>
@@ -97,7 +118,20 @@ function Projects() {
           rel="noopener noreferrer"
           href="#"
         >
-          <div className="headGrapic">Solution</div>
+          <div className="headGrapic">Technologies</div>
+          <div className="LogoPro TechStack">
+            <img src={html} className="Tech" alt="Logo" />
+            <img src={css} className="Tech" alt="Logo" />
+            <img src={js} className="Tech" alt="Logo" />
+            <img src={PHP} className="Tech" alt="Logo" />
+            <img src={Mysql} className="Tech" alt="Logo" />
+            <img src={Boost} className="Tech" alt="Logo" />
+            <img src={Gemini} className="Tech" alt="Logo" />
+            <br />
+            <img src={figma} className="Tech figma" alt="Logo" />
+
+            <img src={Miro} className="Tech" alt="Logo" />
+          </div>
         </a>
       </div>
       <br />
@@ -105,21 +139,11 @@ function Projects() {
         <div className="text-projectpage-subheading">1. Motivation </div>
         <div className="content-trailing">
           <div className="text-projectpage-body">
-            The motivation to develop Trophy arose from the observation that a
-            motivated workforce is crucial for productivity and retention within
-            an organization in order to reach its goals and objectives.
-            Traditional reward systems often fail to ensure that employees
-            engage in extracurricular activities effectively. By implementing a
-            gamified token system, Trophy aims to transform the workplace into a
-            community where employees feel valued and connected. This approach
-            intends to foster a culture of appreciation where employees actively
-            engage in activities that benefit both
-            <span className="text-figure-body">
-              themselves and the organization.
-            </span>
-            <span className="text-highlighted-body">
-              a (very messy) horizontal.
-            </span>
+            Reduce the gap between music and emotions. Through technology, aims
+            to create a user-friendly platform where users can engage with music
+            on a deeper{" "}
+            <span className="text-highlighted-body"> emotional level</span>,
+            recognizing its complexity and enabling meaningful connections.
           </div>
         </div>
       </div>
@@ -129,22 +153,22 @@ function Projects() {
         <div className="text-projectpage-subheading">2. Features </div>
         <div className="content-trailing">
           <div className="text-projectpage-body">
-            <span className="text-highlighted-body">• Earning Coins</span>{" "}
+            <span className="text-highlighted-body">• Creator Side </span>{" "}
             <br />
-            The employees can earn Coins by carpooling with colleagues, engaging
-            in extracurricular activities such as workshops and leadership
-            development programs, hackathons, sports events, writing and posting
-            blogs, taking AI powered therapy sessions, and spinning the Fortune
-            Wheel three times per day.
+            Creators should be able to sign up for an account by providing the
+            necessary information. Once signed up, they can upload their music
+            files and edit track details as needed. Additionally, creators
+            should have the functionality to create new tasks or jobs for
+            listeners, encouraging interaction with their content.
             <br />
             <br />
-            <span className="text-highlighted-body">• Redeeming Coins </span>
+            <span className="text-highlighted-body">• Listener Side </span>
             <br />
-            The Coins earned can be redeemed at the office canteen, to reserve
-            parking spots, for Electric Vehicle charging, to reserve activities
-            in the play area, and to reserve the sports courts (basketball,
-            tennis, etc.) Also, Coins could be used as a form of gift for their
-            colleagues to show their appreciation and support.
+            Listeners should be able to sign up for an account by providing the
+            necessary information. They should have the ability to add emotions
+            to tracks and interact with the content emotionally. Additionally,
+            listeners should have the opportunity to earn money through their
+            engagement and be able to withdraw their earnings easily.
             <br />
             <br />
             <br />
@@ -156,30 +180,38 @@ function Projects() {
           <img src={ProImg} alt="Screenshot of Project 1" />
         </div>
 
-        <div className="text-projectpage-year">
-          Google, Stadia — September '22
-        </div>
+        <div className="text-projectpage-year">Web Project — Augest '23</div>
         <div className="TitleScreen">
-          Trophy - Employee Loyalty Rewarding System
+          MoodWave - Dive into emotions through music
         </div>
         <div>
-          <img src={pro1} className="pro1" alt="Screenshot of Project 1" />
+          <img
+            src={ProScreen01}
+            className="pro1"
+            alt="Screenshot of Project 1"
+          />
         </div>
 
         <div>
-          <img src={pro1} className="pro1" alt="Screenshot of Project 1" />
+          <img
+            src={ProScreen02}
+            className="pro1"
+            alt="Screenshot of Project 1"
+          />
         </div>
 
         <div>
-          <img src={pro1} className="pro1" alt="Screenshot of Project 1" />
+          <img
+            src={ProScreen03}
+            className="pro1"
+            alt="Screenshot of Project 1"
+          />
         </div>
 
         <div className="line">""</div>
 
         <div className="TitleScreen">This is an archived project.</div>
-        <div className="text-projectpage-year">
-          Google, Stadia — September '22
-        </div>
+        <div className="text-projectpage-year">Web Project — Augest '23</div>
       </div>
       <br />
       <br />
@@ -191,28 +223,30 @@ function Projects() {
       <br />
       <br />
       <div className="card nextpro">
-        <div className="project-card-outline">
-          <div className="project-card-outline2">
-            <div className="CardHead">
-              <div>
-                <div className="text-projectcard-title">Stadia Bluetooth</div>
-                <div className="text-projectcard-description">
-                  Giving a second life to over a million controllers.
+        <Link to="/Projects3" className="LinkTest">
+          <div className="project-card-outline">
+            <div className="project-card-outline2">
+              <div className="CardHead">
+                <div>
+                  <div className="text-projectcard-title">EDU</div>
+                  <div className="text-projectcard-description">
+                    Online Learning and Teaching Platform
+                  </div>
+                </div>
+                <div>
+                  <img src={Arrow} className="Arrow" alt="Arrow Icon" />
                 </div>
               </div>
-              <div>
-                <img src={Arrow} className="Arrow" alt="Arrow Icon" />
+              <div className="Project_img">
+                <img
+                  src={Project3}
+                  className="Arrow32"
+                  alt="Stadia Bluetooth Project"
+                />
               </div>
             </div>
-            <div className="Project_img">
-              <img
-                src={Project1}
-                className="Arrow32"
-                alt="Stadia Bluetooth Project"
-              />
-            </div>
-          </div>
-        </div>
+          </div>{" "}
+        </Link>
       </div>
 
       <div className="container-footer">

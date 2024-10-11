@@ -5,6 +5,21 @@ import pro1 from "../../Assets/Pro1.png";
 import ProImg from "../../Assets/ProImg.png";
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import Ai from "../../Assets/Ai.png";
+import flutter from "../../Assets/Flutter.png";
+import mongo from "../../Assets/Mongo.png";
+import Reacts from "../../Assets/React.png";
+import figma from "../../Assets/figma.png";
+import node from "../../Assets/Node.png";
+import Dart from "../../Assets/Dart.png";
+import AWS from "../../Assets/AWS.png";
+import JWT from "../../Assets/JWT.png";
+import Miro from "../../Assets/Miro.png";
+import ProScreen01 from "../../Assets/ProScreen01.png";
+import ProScreen02 from "../../Assets/ProScreen02.png";
+import ProScreen03 from "../../Assets/ProScreen03.png";
+import Project2 from "../../Assets/Project2.png";
+import { Link, useLocation } from "react-router-dom";
 
 function Projects() {
   const navigate = useNavigate();
@@ -49,8 +64,9 @@ function Projects() {
               <span className="text-highlighted-body">
                 Developer , UI/UX designer
               </span>{" "}
-              — Working on Prototype , Complete the Activities,Hachathon,Sports
-              , Clubs section of the Application
+              — Working on the prototype, completing the frontend and backend
+              for the Activities, Hackathon, and Sports Clubs sections of the
+              application. ,
             </div>
           </div>
           <br />
@@ -59,15 +75,15 @@ function Projects() {
             <div className="text-projectpage-body team">
               Disara Mapalagama
               <br />
-              Navindu
+              Navindu Rathnayaka
               <br />
-              Dushyantha
+              Dushyantha Thilakarathna
             </div>
           </div>{" "}
           <br />
           <div className="overview-text-wrapper">
             <div className="text-overview-overline">Timeline &amp; Status</div>
-            <div className="text-projectpage-body">3 Months</div>
+            <div className="text-projectpage-body">4 Months</div>
           </div>
         </div>
         <div
@@ -101,7 +117,18 @@ function Projects() {
           rel="noopener noreferrer"
           href="#"
         >
-          <div className="headGrapic">Solution</div>
+          <div className="headGrapic">Technologies</div>
+          <div className="LogoPro">
+            <img src={Reacts} className="Tech" alt="Logo" />
+            <img src={flutter} className="Tech" alt="Logo" />
+            <img src={Dart} className="Tech" alt="Logo" />
+            <img src={mongo} className="Tech" alt="Logo" />
+            <img src={AWS} className="Tech" alt="Logo" />
+            <img src={JWT} className="Tech" alt="Logo" />
+            <img src={figma} className="Tech figma" alt="Logo" />
+            <img src={Ai} className="Tech" alt="Logo" />
+            <img src={Miro} className="Tech" alt="Logo" />
+          </div>
         </a>
       </div>
       <br />
@@ -160,30 +187,38 @@ function Projects() {
           <img src={ProImg} alt="Screenshot of Project 1" />
         </div>
 
-        <div className="text-projectpage-year">
-          Google, Stadia — September '22
-        </div>
+        <div className="text-projectpage-year">Project — March '24</div>
         <div className="TitleScreen">
           Trophy - Employee Loyalty Rewarding System
         </div>
         <div>
-          <img src={pro1} className="pro1" alt="Screenshot of Project 1" />
+          <img
+            src={ProScreen01}
+            className="pro1"
+            alt="Screenshot of Project 1"
+          />
         </div>
 
         <div>
-          <img src={pro1} className="pro1" alt="Screenshot of Project 1" />
+          <img
+            src={ProScreen02}
+            className="pro1"
+            alt="Screenshot of Project 1"
+          />
         </div>
 
         <div>
-          <img src={pro1} className="pro1" alt="Screenshot of Project 1" />
+          <img
+            src={ProScreen03}
+            className="pro1"
+            alt="Screenshot of Project 1"
+          />
         </div>
 
         <div className="line">""</div>
 
         <div className="TitleScreen">This is an archived project.</div>
-        <div className="text-projectpage-year">
-          Google, Stadia — September '22
-        </div>
+        <div className="text-projectpage-year">Project — March '24</div>
       </div>
       <br />
       <br />
@@ -195,28 +230,30 @@ function Projects() {
       <br />
       <br />
       <div className="card nextpro">
-        <div className="project-card-outline">
-          <div className="project-card-outline2">
-            <div className="CardHead">
-              <div>
-                <div className="text-projectcard-title">Stadia Bluetooth</div>
-                <div className="text-projectcard-description">
-                  Giving a second life to over a million controllers.
+        <Link to="/Projects2" className="LinkTest">
+          <div className="project-card-outline">
+            <div className="project-card-outline2">
+              <div className="CardHead">
+                <div>
+                  <div className="text-projectcard-title">MoodWave</div>
+                  <div className="text-projectcard-description">
+                    Check the emotions of the music.
+                  </div>
+                </div>
+                <div>
+                  <img src={Arrow} className="Arrow" alt="Arrow Icon" />
                 </div>
               </div>
-              <div>
-                <img src={Arrow} className="Arrow" alt="Arrow Icon" />
+              <div className="Project_img">
+                <img
+                  src={Project2}
+                  className="Arrow32"
+                  alt="Stadia Bluetooth Project"
+                />
               </div>
             </div>
-            <div className="Project_img">
-              <img
-                src={Procover1}
-                className="Arrow32"
-                alt="Stadia Bluetooth Project"
-              />
-            </div>
           </div>
-        </div>
+        </Link>
       </div>
 
       <div className="container-footer">
