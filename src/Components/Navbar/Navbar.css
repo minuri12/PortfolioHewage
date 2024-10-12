@@ -266,12 +266,24 @@ a {
   }
 
   .mobile-popup-menu {
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    background-color: rgba(0, 0, 0, 0.801);
+    border: 1px solid rgba(242, 242, 242, 0.1);
+
+    transition: box-shadow 1s cubic-bezier(0.23, 1, 0.32, 1),
+      border 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: flex;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
     z-index: 1000;
     grid-row-gap: 4px;
-    -webkit-backdrop-filter: blur(100px);
-    backdrop-filter: blur(100px);
-    background-color: #000000f8;
-    border: 1px solid #f2f2f22d;
+
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+
+    border: 1px solid #f2f2f217;
     border-radius: 16px;
     flex-direction: column;
     align-items: flex-start;
@@ -294,6 +306,10 @@ a {
     text-decoration: none;
     transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
     display: flex;
+  }
+
+  .mobile-popup-menu img {
+    width: 20px;
   }
 }
 

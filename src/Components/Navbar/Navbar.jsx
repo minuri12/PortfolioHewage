@@ -58,12 +58,9 @@ function Navbar() {
           {isDropdownOpen && (
             <div>
               <div
-                data-w-id="947649b5-efd3-c77d-d5e9-ca6f678434b6"
                 className="mobile-popup-menu"
                 style={{
                   display: "flex",
-                  opacity: 1,
-                  transform: "translate3d(0px, 0px, 0px)",
                 }}
               >
                 <a
