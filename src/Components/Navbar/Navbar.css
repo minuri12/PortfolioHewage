@@ -315,3 +315,22 @@ a {
     width: 20px;
   }
 }
+
+@media only screen and (max-width: 458px) {
+  .text-logo {
+    display: none;
+  }
+
+  .text-underlogo {
+    display: none;
+  }
+
+  .nav-pill-wrapper {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .logo-block {
+    width: 0px;
+  }
+}

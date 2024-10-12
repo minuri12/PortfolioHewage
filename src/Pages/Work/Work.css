@@ -1024,7 +1024,7 @@ tbody td {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 458px) {
   body {
     padding: 37px;
     justify-content: center;
@@ -1036,5 +1036,9 @@ tbody td {
 
   .part_one {
     width: -webkit-fill-available;
+  }
+
+  .Bigtext1 {
+    font-size: 15px;
   }
 }
