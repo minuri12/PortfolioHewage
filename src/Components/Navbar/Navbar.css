@@ -48,7 +48,6 @@
 }
 
 .Navbar {
-  margin: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -102,6 +101,12 @@ a {
   display: flex;
   position: relative;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.pil2 {
+  width: 50px;
+  height: 50px;
+  display: none;
 }
 
 .section-nav {
@@ -232,4 +237,55 @@ a {
 }
 * {
   font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 1110px) {
+  .section-nav {
+    padding-left: 16px;
+
+    padding-right: 16px;
+  }
+
+  .nav-pill-wrapper {
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+}
+
+@media (max-width: 864px) {
+  .nav-pill-wrapper {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+}
+
+@media (max-width: 742px) {
+  .section-nav {
+    justify-content: space-between;
+  }
+
+  .chip-socials-wrapper {
+    display: none;
+  }
+
+  .Navbar {
+    justify-content: space-between;
+  }
+
+  .nav-pill-wrapper {
+    margin-left: 400px;
+    margin-right: 0px;
+    justify-content: right;
+  }
+
+  .nav-pill {
+    justify-content: space-between;
+  }
+
+  .pil2 {
+    display: block;
+    margin-left: 20px;
+    justify-content: center;
+    display: flex;
+  }
 }
