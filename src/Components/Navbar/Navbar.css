@@ -266,9 +266,7 @@ a {
   }
 
   .mobile-popup-menu {
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px);
-    background-color: rgba(0, 0, 0, 0.801);
+    background-color: #161616;
     border: 1px solid rgba(242, 242, 242, 0.1);
 
     transition: box-shadow 1s cubic-bezier(0.23, 1, 0.32, 1),
@@ -279,9 +277,6 @@ a {
 
     z-index: 1000;
     grid-row-gap: 4px;
-
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px);
 
     border: 1px solid #f2f2f217;
     border-radius: 16px;
