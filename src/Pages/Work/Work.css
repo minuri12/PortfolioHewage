@@ -1001,3 +1001,34 @@ tbody td {
     font-size: 23px;
   }
 }
+
+@media (max-width: 893px) {
+  .head_name {
+    font-size: 32px;
+  }
+
+  .text-footer-copyright {
+    font-size: 13px;
+  }
+
+  .text-under-copyright {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 837px) {
+  body {
+    padding: 37px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .main-head {
+    font-size: 10px;
+  }
+
+  .part_one {
+    width: -webkit-fill-available;
+  }
+}
