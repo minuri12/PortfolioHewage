@@ -35,7 +35,12 @@ html {
   justify-content: center;
 }
 
-.logo-block2 img {
+.logo-block3 {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-block3 img {
   width: 40px;
   height: auto;
 }

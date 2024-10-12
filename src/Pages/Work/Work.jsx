@@ -19,6 +19,7 @@ import Project4 from "../../Assets/Project4.png";
 import flyers from "../../Assets/flyers.png";
 import behance from "../../Assets/behance.png";
 import "./Work.css";
+import { motion } from "framer-motion";
 
 function Work() {
   const [time, setTime] = useState(new Date());
@@ -27,6 +28,10 @@ function Work() {
   useEffect(() => {
     setInterval(() => setTime(new Date()), 1000);
   }, []);
+
+  useEffect(() => {
+    document.title = "Home";
+  }, {});
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,11 +45,19 @@ function Work() {
   const toggleSwitch = () => {
     setIsBatMan(!isBatMan);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page when the component mounts
+  }, []);
 
   return (
     <div>
-      <Navbar />s
-      <div className="pagecontent">
+      <Navbar />
+      <motion.div
+        className="pagecontent"
+        initial={{ opacity: 0, y: 50 }} // start with 0 opacity and below the screen
+        animate={{ opacity: 1, y: 0 }} // animate to full opacity and original position
+        transition={{ duration: 0.8, ease: "easeOut" }} // control speed and easing
+      >
         <div>
           <div className="main-head">
             Solving real-world problems through elegant
@@ -68,8 +81,13 @@ function Work() {
             })}
           </div>
         </div>
-      </div>
-      <div className="main-content">
+      </motion.div>
+      <motion.div
+        className="main-content"
+        initial={{ opacity: 0, y: 50 }} // start with 0 opacity and below the screen
+        animate={{ opacity: 1, y: 0 }} // animate to full opacity and original position
+        transition={{ duration: 1.5, ease: "easeOut" }} // control speed and easing
+      >
         <div className="part_one ">
           <div className="first_bar">
             <div className="logo-block">
@@ -123,13 +141,24 @@ function Work() {
             />
           </div>
         </div>
-      </div>
-      <div className="Volhead">Volunteer Experience</div>
-      <div className="VolExperiance">
-        <img src={Volunteer} className="volunteer" alt="Logo" />
-      </div>{" "}
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }} // start with 0 opacity and below the screen
+        animate={{ opacity: 1, y: 0 }} // animate to full opacity and original position
+        transition={{ duration: 2.8, ease: "easeOut" }} // control speed and easing
+      >
+        <div className="Volhead">Volunteer Experience</div>
+        <div className="VolExperiance">
+          <img src={Volunteer} className="volunteer" alt="Logo" />
+        </div>{" "}
+      </motion.div>
       <br /> <br />
-      <div className="part_one second">
+      <motion.div
+        className="part_one second"
+        initial={{ opacity: 0, y: 50 }} // start with 0 opacity and below the screen
+        animate={{ opacity: 1, y: 0 }} // animate to full opacity and original position
+        transition={{ duration: 3.0, ease: "easeOut" }} // control speed and easing
+      >
         <div className="row">
           <div className="imgholder">
             <img src={Minuri2} className="Minuri2" alt="Logo" />
@@ -149,10 +178,15 @@ function Work() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
       <div className="Volhead">My Projects</div>
       <br />
-      <div className="projectSection">
+      <div
+        className="projectSection"
+        initial={{ opacity: 0, y: 50 }} // start with 0 opacity and below the screen
+        animate={{ opacity: 1, y: 0 }} // animate to full opacity and original position
+        transition={{ duration: 0.8, ease: "easeOut" }} // control speed and easing
+      >
         <div className="card card1">
           <Link to="/Projects" className="LinkTest">
             <div className="project-card-outline">
@@ -223,14 +257,14 @@ function Work() {
           </Link>
         </div>
         <div className="card card3">
-          <Link to="/Projects" className="LinkTest">
+          <Link to="/Projects4" className="LinkTest">
             <div className="project-card-outline">
               <div className="project-card-outline2">
                 <div className="CardHead">
                   <div>
-                    <div className="text-projectcard-title">Nexo</div>
+                    <div className="text-projectcard-title">ShopSense</div>
                     <div className="text-projectcard-description">
-                      E-commerce Platform
+                      Tap it Shop it
                     </div>
                   </div>
                   <div>
@@ -265,6 +299,12 @@ function Work() {
           </thead>
           <tbody>
             <tr>
+              <td>Nexo</td>
+              <td>E commerce website</td>
+              <td>-</td>
+              <td>Prototype, Frontend, Backend</td>
+            </tr>
+            <tr>
               <td>MyJourney</td>
               <td>
                 {" "}
@@ -274,6 +314,7 @@ function Work() {
               <td>Disara</td>
               <td>Prototype, Frontend</td>
             </tr>
+
             <tr>
               <td>Helping Hand</td>
               <td>Hospital Management System</td>

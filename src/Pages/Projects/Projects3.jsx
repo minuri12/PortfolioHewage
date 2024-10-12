@@ -1,22 +1,51 @@
 import "./Projects.css";
 import Arrow from "../../Assets/right-arrow.png";
+import { Link, useLocation } from "react-router-dom";
 import Project1 from "../../Assets/Project1.png";
+import Project3 from "../../Assets/Project3.png";
 import pro1 from "../../Assets/Pro1.png";
+import Procover3 from "../../Assets/Project3Cover.png";
 import ProImg from "../../Assets/ProImg.png";
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
+import Ai from "../../Assets/Ai.png";
+import css from "../../Assets/CSS.png";
+import flutter from "../../Assets/Flutter.png";
+import html from "../../Assets/HTML.png";
+import js from "../../Assets/JS.png";
+import Mysql from "../../Assets/MySql.png";
+import figma from "../../Assets/figma.png";
+import PHP from "../../Assets/PHP.png";
+import Gemini from "../../Assets/Gemini.png";
+import Boost from "../../Assets/Boost.png";
+import Miro from "../../Assets/Miro.png";
+import ProScreen01 from "../../Assets/Pro3Screen01.png";
+import ProScreen02 from "../../Assets/Pro3Screen02.png";
+import ProScreen03 from "../../Assets/Pro3Screen03.png";
+import Project4 from "../../Assets/Project4.png";
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 function Projects() {
   const navigate = useNavigate();
-
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page when the component mounts
+  }, []);
   const BackButton = () => {
     const navigate = useNavigate();
   };
+
   const handleBack = () => {
     navigate(-1);
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 8); // Adjust the timeout as necessary
   };
+
+  useEffect(() => {
+    document.title = "EDU";
+  }, {});
   return (
-    <div className="AboutSec">
+    <div className="AboutSec3">
       <div className="button-project-back" onClick={handleBack}>
         {" "}
         <div>
@@ -25,14 +54,35 @@ function Projects() {
         <div className="text-button">Back</div>
       </div>
 
-      <div className="text-hero project-title">Trophy</div>
-      <div className="text-projectpage-year">
-        Google, Stadia — September '22
-      </div>
+      <motion.div
+        className="text-hero project-title"
+        initial={{ opacity: 0, y: 50 }} // start with 0 opacity and below the screen
+        animate={{ opacity: 1, y: 0 }} // animate to full opacity and original position
+        transition={{ duration: 1.5, ease: "easeOut" }} // control speed and easing
+      >
+        EDU
+      </motion.div>
+      <motion.div
+        className="text-projectpage-year"
+        initial={{ opacity: 0, y: 50 }} // start with 0 opacity and below the screen
+        animate={{ opacity: 1, y: 0 }} // animate to full opacity and original position
+        transition={{ duration: 1.5, ease: "easeOut" }} // control speed and easing
+      >
+        Online Learning and Teaching Platform
+      </motion.div>
 
-      <div className="Project_img">
-        <img src={Project1} className="Arrow32" alt="Screenshot of Project 1" />
-      </div>
+      <motion.div
+        className="Project_img cover"
+        initial={{ opacity: 0, y: 50 }} // start with 0 opacity and below the screen
+        animate={{ opacity: 1, y: 0 }} // animate to full opacity and original position
+        transition={{ duration: 1.5, ease: "easeOut" }} // control speed and easing
+      >
+        <img
+          src={Procover3}
+          className="Procover"
+          alt="Screenshot of Project 1"
+        />
+      </motion.div>
 
       <div className="container-overview">
         <div
@@ -45,25 +95,18 @@ function Projects() {
               <span className="text-highlighted-body">
                 Developer , UI/UX designer
               </span>{" "}
-              — Working on Prototype , Complete the Activities,Hachathon,Sports
-              , Clubs section of the Application
+              — Working on Prototype , FrontEnd & Backend
             </div>
           </div>
           <br />
           <div className="overview-text-wrapper">
             <div className="text-overview-overline">Team</div>
-            <div className="text-projectpage-body team">
-              Disara Mapalagama
-              <br />
-              Navindu
-              <br />
-              Dushyantha
-            </div>
+            <div className="text-projectpage-body team">Tharindu Hashan</div>
           </div>{" "}
           <br />
           <div className="overview-text-wrapper">
             <div className="text-overview-overline">Timeline &amp; Status</div>
-            <div className="text-projectpage-body">3 Months</div>
+            <div className="text-projectpage-body">1 Months</div>
           </div>
         </div>
         <div
@@ -73,17 +116,19 @@ function Projects() {
           <div className="overview-text-wrapper">
             <div className="text-overview-overline">Overview</div>
             <div className="text-projectpage-body">
-              “Trophy” is a non-monetary token-based employee loyalty rewarding
-              mobile application solution to maintain the company’s employees’
-              sense of community and improve the team member experience in the
-              office with more interactivity, inclusivity, and motivation.
+              In today's digital age, EDU is transforming how we learn by
+              offering an innovative online education platform. It breaks down
+              traditional barriers to education and expands learning
+              opportunities for students and educators alike. The platform is
+              designed with user-friendly features such as course playlists,
+              interactive video content, and productivity tools to keep learners
+              engaged.
               <br />
               <br />
-              Trophy is gamified to give a sense of relaxation to the employees
-              by collecting the tokens, which are named “Coins”. The company’s
-              top management decides the value of a Coin, how many tokens can be
-              earned by each activity, and how and when employees are allowed to
-              redeem the tokens.
+              Additionally, EDU provides administrative controls that allow for
+              easy management and customization of courses, making it an ideal
+              tool for enhancing both the learning experience and overall
+              engagement.
               <br />
             </div>
           </div>
@@ -97,7 +142,20 @@ function Projects() {
           rel="noopener noreferrer"
           href="#"
         >
-          <div className="headGrapic">Solution</div>
+          <div className="headGrapic">Technologies</div>
+          <div className="LogoPro TechStack">
+            <img src={html} className="Tech" alt="Logo" />
+            <img src={css} className="Tech" alt="Logo" />
+            <img src={js} className="Tech" alt="Logo" />
+            <img src={PHP} className="Tech" alt="Logo" />
+            <img src={Mysql} className="Tech" alt="Logo" />
+            <img src={Boost} className="Tech" alt="Logo" />
+
+            <br />
+            <img src={figma} className="Tech figma" alt="Logo" />
+
+            <img src={Miro} className="Tech" alt="Logo" />
+          </div>
         </a>
       </div>
       <br />
@@ -105,21 +163,16 @@ function Projects() {
         <div className="text-projectpage-subheading">1. Motivation </div>
         <div className="content-trailing">
           <div className="text-projectpage-body">
-            The motivation to develop Trophy arose from the observation that a
-            motivated workforce is crucial for productivity and retention within
-            an organization in order to reach its goals and objectives.
-            Traditional reward systems often fail to ensure that employees
-            engage in extracurricular activities effectively. By implementing a
-            gamified token system, Trophy aims to transform the workplace into a
-            community where employees feel valued and connected. This approach
-            intends to foster a culture of appreciation where employees actively
-            engage in activities that benefit both
-            <span className="text-figure-body">
-              themselves and the organization.
-            </span>
+            The motivation behind the development of EDU lies in the desire to
+            provide a user-centric platform that enhances learning experiences
+            by offering engaging, interactive, and
             <span className="text-highlighted-body">
-              a (very messy) horizontal.
+              {" "}
+              flexible educational content.
             </span>
+            , By integrating tools such as course playlists, interactive videos,
+            and productivity features, EDU aims to empower both students and
+            educators.
           </div>
         </div>
       </div>
@@ -129,22 +182,19 @@ function Projects() {
         <div className="text-projectpage-subheading">2. Features </div>
         <div className="content-trailing">
           <div className="text-projectpage-body">
-            <span className="text-highlighted-body">• Earning Coins</span>{" "}
+            <span className="text-highlighted-body">• Student Features </span>{" "}
             <br />
-            The employees can earn Coins by carpooling with colleagues, engaging
-            in extracurricular activities such as workshops and leadership
-            development programs, hackathons, sports events, writing and posting
-            blogs, taking AI powered therapy sessions, and spinning the Fortune
-            Wheel three times per day.
+            Students can easily navigate course playlists, like and comment on
+            videos, and access notes for improved learning. Productivity tools,
+            including a calendar, to-do list, and sticky notes, help manage
+            tasks, while students also have the option to register as tutors.
             <br />
             <br />
-            <span className="text-highlighted-body">• Redeeming Coins </span>
+            <span className="text-highlighted-body">• Tutor Features </span>
             <br />
-            The Coins earned can be redeemed at the office canteen, to reserve
-            parking spots, for Electric Vehicle charging, to reserve activities
-            in the play area, and to reserve the sports courts (basketball,
-            tennis, etc.) Also, Coins could be used as a form of gift for their
-            colleagues to show their appreciation and support.
+            Tutors can create course playlists, upload videos, and monitor
+            student interactions. This insight allows tutors to adjust content
+            and teaching methods to enhance engagement and learning outcomes.
             <br />
             <br />
             <br />
@@ -156,30 +206,38 @@ function Projects() {
           <img src={ProImg} alt="Screenshot of Project 1" />
         </div>
 
-        <div className="text-projectpage-year">
-          Google, Stadia — September '22
-        </div>
+        <div className="text-projectpage-year">Web Project — January '23</div>
         <div className="TitleScreen">
-          Trophy - Employee Loyalty Rewarding System
+          EDU - Online Learning and Teaching Platform
         </div>
         <div>
-          <img src={pro1} className="pro1" alt="Screenshot of Project 1" />
+          <img
+            src={ProScreen01}
+            className="pro1"
+            alt="Screenshot of Project 1"
+          />
         </div>
 
         <div>
-          <img src={pro1} className="pro1" alt="Screenshot of Project 1" />
+          <img
+            src={ProScreen02}
+            className="pro1"
+            alt="Screenshot of Project 1"
+          />
         </div>
 
         <div>
-          <img src={pro1} className="pro1" alt="Screenshot of Project 1" />
+          <img
+            src={ProScreen03}
+            className="pro1"
+            alt="Screenshot of Project 1"
+          />
         </div>
 
         <div className="line">""</div>
 
         <div className="TitleScreen">This is an archived project.</div>
-        <div className="text-projectpage-year">
-          Google, Stadia — September '22
-        </div>
+        <div className="text-projectpage-year">Web Project — January '23</div>
       </div>
       <br />
       <br />
@@ -190,29 +248,31 @@ function Projects() {
       <div class="text-projectpage-heading next-project">Next project:</div>
       <br />
       <br />
-      <div className="card nextpro">
-        <div className="project-card-outline">
-          <div className="project-card-outline2">
-            <div className="CardHead">
-              <div>
-                <div className="text-projectcard-title">Stadia Bluetooth</div>
-                <div className="text-projectcard-description">
-                  Giving a second life to over a million controllers.
+      <div className="card nextpro card3">
+        <Link to="/Projects4" className="LinkTest">
+          <div className="project-card-outline">
+            <div className="project-card-outline2">
+              <div className="CardHead">
+                <div>
+                  <div className="text-projectcard-title">Nexo</div>
+                  <div className="text-projectcard-description">
+                    E-commerce Platform
+                  </div>
+                </div>
+                <div>
+                  <img src={Arrow} className="Arrow" alt="Arrow Icon" />
                 </div>
               </div>
-              <div>
-                <img src={Arrow} className="Arrow" alt="Arrow Icon" />
+              <div className="Project_img">
+                <img
+                  src={Project4}
+                  className="Arrow32"
+                  alt="Stadia Bluetooth Project"
+                />
               </div>
             </div>
-            <div className="Project_img">
-              <img
-                src={Project1}
-                className="Arrow32"
-                alt="Stadia Bluetooth Project"
-              />
-            </div>
-          </div>
-        </div>
+          </div>{" "}
+        </Link>
       </div>
 
       <div className="container-footer">

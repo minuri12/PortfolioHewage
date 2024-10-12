@@ -7,6 +7,7 @@ import Ai from "../../Assets/Ai.png";
 import css from "../../Assets/CSS.png";
 import flutter from "../../Assets/Flutter.png";
 import html from "../../Assets/HTML.png";
+import Java from "../../Assets/Java.png";
 import js from "../../Assets/JS.png";
 import mongo from "../../Assets/Mongo.png";
 import Mysql from "../../Assets/MySql.png";
@@ -19,13 +20,20 @@ import PHP from "../../Assets/PHP.png";
 import Dart from "../../Assets/Dart.png";
 import Firebase from "../../Assets/Firebase.png";
 import Me from "../../Assets/Me.png";
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+
 function Info() {
-  const location = useLocation(); // Get the current location
+  const location = useLocation();
+  // Get the current location
 
   // Determine the active section based on the current URL path
   const isWorkPage = location.pathname === "/Work";
   const isInfoPage = location.pathname === "/Info";
 
+  useEffect(() => {
+    document.title = "Info";
+  }, {});
   return (
     <div>
       <div className="section-nav">
@@ -91,19 +99,34 @@ function Info() {
           </div>
         </div>
       </div>
-      <div class="overline-wrapper">
+      <motion.div
+        class="overline-wrapper"
+        initial={{ opacity: 0, y: 50 }} // start with 0 opacity and below the screen
+        animate={{ opacity: 1, y: 0 }} // animate to full opacity and original position
+        transition={{ duration: 0.8, ease: "easeOut" }} // control speed and easing
+      >
         <div class="icon-section-dot"></div>
         <div class="text-projectpage-overline">ABOUT ME</div>
-      </div>
+      </motion.div>
       <br />
       <br />
-      <div class="text-hero info-hero">
+      <motion.div
+        class="text-hero info-hero"
+        initial={{ opacity: 0, y: 50 }} // start with 0 opacity and below the screen
+        animate={{ opacity: 1, y: 0 }} // animate to full opacity and original position
+        transition={{ duration: 0.8, ease: "easeOut" }} // control speed and easing
+      >
         I am passionate about developing software solutions that inspire and
         elevate
         <span class="text-info-hero-serif"> user experiences.</span>
-      </div>
+      </motion.div>
 
-      <div className="Aboutpart">
+      <motion.div
+        className="Aboutpart"
+        initial={{ opacity: 0, y: 50 }} // start with 0 opacity and below the screen
+        animate={{ opacity: 1, y: 0 }} // animate to full opacity and original position
+        transition={{ duration: 1.5, ease: "easeOut" }} // control speed and easing
+      >
         <div className="window-outline">
           <div className="Meholder">
             <img src={Me} className="Me" alt="Logo" />
@@ -135,11 +158,12 @@ function Info() {
               to work in the software industry, creating user-friendly products
               that make a real impact. Rather than focusing solely on design, I
               aimed to combine my skills in both design and development. I pride
-              myself on my proficiency in HTML, CSS, Flutter, and React, which
-              enables me to craft intuitive user experiences and build
-              captivating user interfaces that solve real-world problems. My
-              focus is now on delivering seamless, user-centered products that
-              truly empower the end user.
+              myself on my proficiency in HTML, CSS, Flutter, and React, along
+              with programming languages like JavaScript and Dart, which enable
+              me to craft intuitive user experiences and build captivating user
+              interfaces that solve real-world problems. My focus is now on
+              delivering seamless, user-centered products that truly empower the
+              end user.
             </div>
             <br />
             <div className="AboutHead">What is My goal ?</div>
@@ -152,7 +176,7 @@ function Info() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       <div className="GrapicSection">
         <a
@@ -168,6 +192,7 @@ function Info() {
             <img src={js} className="Tech" alt="Logo" />
             <img src={node} className="Tech" alt="Logo" />
             <img src={PHP} className="Tech" alt="Logo" />
+            <img src={Java} className="Tech" alt="Logo" />
             <img src={Reacts} className="Tech" alt="Logo" />
             <img src={flutter} className="Tech" alt="Logo" />
             <img src={Dart} className="Tech" alt="Logo" />

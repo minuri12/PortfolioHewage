@@ -7,11 +7,13 @@ import Projects from "./Pages/Projects/Projects";
 import Projects2 from "./Pages/Projects/Projects2";
 import Projects3 from "./Pages/Projects/Projects3";
 import Projects4 from "./Pages/Projects/Projects4";
+import Scrolltotop from "./Components/Scrolltotop";
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <Scrolltotop />
         <Routes>
           <Route path="/Work" element={<Work />} />
           <Route path="/" element={<Loading />} />

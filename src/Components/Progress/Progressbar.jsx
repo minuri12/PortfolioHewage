@@ -22,8 +22,10 @@ function Progressbar({ value = 0, onComplete, showButton }) {
 
   return (
     <div className="container">
-      <div className="logo-block2">
-        <img src={Logo} className="logomark" alt="Logo" />
+      <div className="logo-block3">
+        <div className="LogoText">
+          <div className="text-logo">Minuri Senara</div>
+        </div>
       </div>
 
       {/* Show the progress bar and text only if present is less than 100 */}

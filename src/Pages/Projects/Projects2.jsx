@@ -22,16 +22,30 @@ import Miro from "../../Assets/Miro.png";
 import ProScreen01 from "../../Assets/Pro2Screen01.png";
 import ProScreen02 from "../../Assets/Pro2Screen02.png";
 import ProScreen03 from "../../Assets/Pro2Screen03.png";
-
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 function Projects() {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page when the component mounts
+  }, []);
 
   const BackButton = () => {
     const navigate = useNavigate();
   };
+
   const handleBack = () => {
     navigate(-1);
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 8);
   };
+
+  useEffect(() => {
+    document.title = "MoodWave";
+  }, {});
+
   return (
     <div className="AboutSec2">
       <div className="button-project-back" onClick={handleBack}>
@@ -42,18 +56,35 @@ function Projects() {
         <div className="text-button">Back</div>
       </div>
 
-      <div className="text-hero project-title">MoodWave</div>
-      <div className="text-projectpage-year">
+      <motion.div
+        className="text-hero project-title"
+        initial={{ opacity: 0, y: 50 }} // start with 0 opacity and below the screen
+        animate={{ opacity: 1, y: 0 }} // animate to full opacity and original position
+        transition={{ duration: 1.5, ease: "easeOut" }} // control speed and easing
+      >
+        MoodWave
+      </motion.div>
+      <motion.div
+        className="text-projectpage-year"
+        initial={{ opacity: 0, y: 50 }} // start with 0 opacity and below the screen
+        animate={{ opacity: 1, y: 0 }} // animate to full opacity and original position
+        transition={{ duration: 1.5, ease: "easeOut" }} // control speed and easing
+      >
         Check the emotions of the music.
-      </div>
+      </motion.div>
 
-      <div className="Project_img cover">
+      <motion.div
+        className="Project_img cover"
+        initial={{ opacity: 0, y: 50 }} // start with 0 opacity and below the screen
+        animate={{ opacity: 1, y: 0 }} // animate to full opacity and original position
+        transition={{ duration: 1.5, ease: "easeOut" }} // control speed and easing
+      >
         <img
           src={Procover2}
           className="Procover"
           alt="Screenshot of Project 1"
         />
-      </div>
+      </motion.div>
 
       <div className="container-overview">
         <div
@@ -222,7 +253,7 @@ function Projects() {
       <div class="text-projectpage-heading next-project">Next project:</div>
       <br />
       <br />
-      <div className="card nextpro">
+      <div className="card nextpro card2">
         <Link to="/Projects3" className="LinkTest">
           <div className="project-card-outline">
             <div className="project-card-outline2">

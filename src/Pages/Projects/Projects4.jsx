@@ -1,22 +1,55 @@
 import "./Projects.css";
 import Arrow from "../../Assets/right-arrow.png";
+import { Link, useLocation } from "react-router-dom";
 import Project1 from "../../Assets/Project1.png";
+import Project3 from "../../Assets/Project3.png";
 import pro1 from "../../Assets/Pro1.png";
+import Procover3 from "../../Assets/Project4Cover.png";
 import ProImg from "../../Assets/ProImg.png";
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
+import Ai from "../../Assets/Ai.png";
+import Node from "../../Assets/Node.png";
+import flutter from "../../Assets/Flutter.png";
+import firebase from "../../Assets/Firebase.png";
+import Reactimg from "../../Assets/React.png";
+import js from "../../Assets/JS.png";
+import java from "../../Assets/Java.png";
+import Mysql from "../../Assets/MySql.png";
+import figma from "../../Assets/figma.png";
+import PHP from "../../Assets/PHP.png";
+import Gemini from "../../Assets/Gemini.png";
+import Boost from "../../Assets/Boost.png";
+import Miro from "../../Assets/Miro.png";
+import ProScreen01 from "../../Assets/Pro4Screen01.png";
+import ProScreen02 from "../../Assets/Pro4Screen02.png";
+import ProScreen03 from "../../Assets/Pro4Screen03.png";
+import Project4 from "../../Assets/Project4.png";
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 function Projects() {
   const navigate = useNavigate();
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const BackButton = () => {
     const navigate = useNavigate();
+    window.scrollTo(0, 0);
   };
+
   const handleBack = () => {
     navigate(-1);
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 8); // Adjust the timeout as necessary
   };
+
+  useEffect(() => {
+    document.title = "ShopSense";
+  }, {});
+
   return (
-    <div className="AboutSec">
+    <div className="AboutSec4">
       <div className="button-project-back" onClick={handleBack}>
         {" "}
         <div>
@@ -25,14 +58,35 @@ function Projects() {
         <div className="text-button">Back</div>
       </div>
 
-      <div className="text-hero project-title">Trophy</div>
-      <div className="text-projectpage-year">
-        Google, Stadia — September '22
-      </div>
+      <motion.div
+        className="text-hero project-title"
+        initial={{ opacity: 0, y: 50 }} // start with 0 opacity and below the screen
+        animate={{ opacity: 1, y: 0 }} // animate to full opacity and original position
+        transition={{ duration: 1.5, ease: "easeOut" }} // control speed and easing
+      >
+        ShopSense
+      </motion.div>
+      <motion.div
+        className="text-projectpage-year"
+        initial={{ opacity: 0, y: 50 }} // start with 0 opacity and below the screen
+        animate={{ opacity: 1, y: 0 }} // animate to full opacity and original position
+        transition={{ duration: 1.5, ease: "easeOut" }} // control speed and easing
+      >
+        Tap it Shop it
+      </motion.div>
 
-      <div className="Project_img">
-        <img src={Project1} className="Arrow32" alt="Screenshot of Project 1" />
-      </div>
+      <motion.div
+        className="Project_img cover"
+        initial={{ opacity: 0, y: 50 }} // start with 0 opacity and below the screen
+        animate={{ opacity: 1, y: 0 }} // animate to full opacity and original position
+        transition={{ duration: 1.5, ease: "easeOut" }} // control speed and easing
+      >
+        <img
+          src={Procover3}
+          className="Procover"
+          alt="Screenshot of Project 1"
+        />
+      </motion.div>
 
       <div className="container-overview">
         <div
@@ -45,25 +99,28 @@ function Projects() {
               <span className="text-highlighted-body">
                 Developer , UI/UX designer
               </span>{" "}
-              — Working on Prototype , Complete the Activities,Hachathon,Sports
-              , Clubs section of the Application
+              — Working on Prototype , FrontEnd(Admin Panel)
             </div>
           </div>
           <br />
           <div className="overview-text-wrapper">
             <div className="text-overview-overline">Team</div>
+            <div className="text-projectpage-body team">Disara Mapalagama</div>
             <div className="text-projectpage-body team">
-              Disara Mapalagama
-              <br />
-              Navindu
-              <br />
-              Dushyantha
+              Dushyantha Thilakarathna
             </div>
           </div>{" "}
           <br />
           <div className="overview-text-wrapper">
             <div className="text-overview-overline">Timeline &amp; Status</div>
-            <div className="text-projectpage-body">3 Months</div>
+            <div className="text-projectpage-body">Ongoing</div>
+          </div>{" "}
+          <br />
+          <div className="overview-text-wrapper">
+            <div className="text-overview-overline">Other Java Projects</div>
+            <div className="text-projectpage-body">
+              Hospital Management System,Market Management system,Nexo
+            </div>
           </div>
         </div>
         <div
@@ -73,17 +130,20 @@ function Projects() {
           <div className="overview-text-wrapper">
             <div className="text-overview-overline">Overview</div>
             <div className="text-projectpage-body">
-              “Trophy” is a non-monetary token-based employee loyalty rewarding
-              mobile application solution to maintain the company’s employees’
-              sense of community and improve the team member experience in the
-              office with more interactivity, inclusivity, and motivation.
+              ShopSense revolutionizes the online shopping experience for the
+              visually impaired with a tactile, user-friendly interface.
+              Available as a dedicated mobile app, it allows users to navigate
+              and shop with ease using screen taps and artificial
+              intelligence-powered narration. The app provides detailed guidance
+              through product categories, size options, and personalized
+              recommendations, ensuring a seamless shopping experience.
               <br />
               <br />
-              Trophy is gamified to give a sense of relaxation to the employees
-              by collecting the tokens, which are named “Coins”. The company’s
-              top management decides the value of a Coin, how many tokens can be
-              earned by each activity, and how and when employees are allowed to
-              redeem the tokens.
+              For retailers, ShopSense offers a web-based admin panel to manage
+              inventory, update product descriptions, and track customer
+              interactions. This intuitive interface allows businesses to
+              enhance their offerings for blind users, making online shopping
+              more inclusive and accessible for everyone.
               <br />
             </div>
           </div>
@@ -97,7 +157,19 @@ function Projects() {
           rel="noopener noreferrer"
           href="#"
         >
-          <div className="headGrapic">Solution</div>
+          <div className="headGrapic">Technologies</div>
+          <div className="LogoPro TechStack">
+            <img src={Reactimg} className="Tech" alt="Logo" />
+
+            <img src={java} className="Tech" alt="Logo" />
+            <img src={Node} className="Tech" alt="Logo" />
+            <img src={firebase} className="Tech" alt="Logo" />
+
+            <br />
+            <img src={figma} className="Tech figma" alt="Logo" />
+
+            <img src={Miro} className="Tech" alt="Logo" />
+          </div>
         </a>
       </div>
       <br />
@@ -105,21 +177,16 @@ function Projects() {
         <div className="text-projectpage-subheading">1. Motivation </div>
         <div className="content-trailing">
           <div className="text-projectpage-body">
-            The motivation to develop Trophy arose from the observation that a
-            motivated workforce is crucial for productivity and retention within
-            an organization in order to reach its goals and objectives.
-            Traditional reward systems often fail to ensure that employees
-            engage in extracurricular activities effectively. By implementing a
-            gamified token system, Trophy aims to transform the workplace into a
-            community where employees feel valued and connected. This approach
-            intends to foster a culture of appreciation where employees actively
-            engage in activities that benefit both
-            <span className="text-figure-body">
-              themselves and the organization.
-            </span>
-            <span className="text-highlighted-body">
-              a (very messy) horizontal.
-            </span>
+            We identified a major gap: blind individuals often rely on sighted
+            assistance for online clothing shopping, as current solutions aren't
+            fully accessible. Despite targeting visually impaired users, these
+            apps still require help to get started. With rising global visual
+            impairments and a growing demand for accessibility, ShopSense steps
+            in to provide independence. By integrating tactile feedback and
+            AI-powered narration, we empower
+            <span className="text-highlighted-body">blind users </span>to shop
+            confidently on their own, offering a truly inclusive digital
+            shopping experience.
           </div>
         </div>
       </div>
@@ -129,22 +196,22 @@ function Projects() {
         <div className="text-projectpage-subheading">2. Features </div>
         <div className="content-trailing">
           <div className="text-projectpage-body">
-            <span className="text-highlighted-body">• Earning Coins</span>{" "}
+            <span className="text-highlighted-body">• Admin Features </span>{" "}
             <br />
-            The employees can earn Coins by carpooling with colleagues, engaging
-            in extracurricular activities such as workshops and leadership
-            development programs, hackathons, sports events, writing and posting
-            blogs, taking AI powered therapy sessions, and spinning the Fortune
-            Wheel three times per day.
+            ShopSense provides a web-based admin portal where retailers can
+            manage inventory, update product listings, and track sales. This
+            intuitive platform allows businesses to easily cater to the visually
+            impaired community, ensuring their products are accessible and
+            organized for a seamless shopping experience.
             <br />
             <br />
-            <span className="text-highlighted-body">• Redeeming Coins </span>
+            <span className="text-highlighted-body">• User Features </span>
             <br />
-            The Coins earned can be redeemed at the office canteen, to reserve
-            parking spots, for Electric Vehicle charging, to reserve activities
-            in the play area, and to reserve the sports courts (basketball,
-            tennis, etc.) Also, Coins could be used as a form of gift for their
-            colleagues to show their appreciation and support.
+            ShopSense offers a mobile app for visually impaired users, featuring
+            tactile navigation through screen taps and voice-guided assistance
+            powered by AI. The app helps users independently explore, select,
+            and purchase clothing items, promoting accessibility and autonomy in
+            online shopping.
             <br />
             <br />
             <br />
@@ -157,28 +224,38 @@ function Projects() {
         </div>
 
         <div className="text-projectpage-year">
-          Google, Stadia — September '22
+          Web & Mobile Project — June '24
         </div>
-        <div className="TitleScreen">
-          Trophy - Employee Loyalty Rewarding System
-        </div>
+        <div className="TitleScreen">ShopSense - Tap it Shop it</div>
         <div>
-          <img src={pro1} className="pro1" alt="Screenshot of Project 1" />
+          <img
+            src={ProScreen01}
+            className="pro1"
+            alt="Screenshot of Project 1"
+          />
         </div>
 
         <div>
-          <img src={pro1} className="pro1" alt="Screenshot of Project 1" />
+          <img
+            src={ProScreen02}
+            className="pro1"
+            alt="Screenshot of Project 1"
+          />
         </div>
 
         <div>
-          <img src={pro1} className="pro1" alt="Screenshot of Project 1" />
+          <img
+            src={ProScreen03}
+            className="pro1"
+            alt="Screenshot of Project 1"
+          />
         </div>
 
         <div className="line">""</div>
 
-        <div className="TitleScreen">This is an archived project.</div>
+        <div className="TitleScreen">This project is currently ongoing.</div>
         <div className="text-projectpage-year">
-          Google, Stadia — September '22
+          Web and Mobile Project — June '24
         </div>
       </div>
       <br />
@@ -190,29 +267,31 @@ function Projects() {
       <div class="text-projectpage-heading next-project">Next project:</div>
       <br />
       <br />
-      <div className="card nextpro">
-        <div className="project-card-outline">
-          <div className="project-card-outline2">
-            <div className="CardHead">
-              <div>
-                <div className="text-projectcard-title">Stadia Bluetooth</div>
-                <div className="text-projectcard-description">
-                  Giving a second life to over a million controllers.
+      <div className="card nextpro card3">
+        <Link to="/Projects4" className="LinkTest">
+          <div className="project-card-outline">
+            <div className="project-card-outline2">
+              <div className="CardHead">
+                <div>
+                  <div className="text-projectcard-title">Nexo</div>
+                  <div className="text-projectcard-description">
+                    E-commerce Platform
+                  </div>
+                </div>
+                <div>
+                  <img src={Arrow} className="Arrow" alt="Arrow Icon" />
                 </div>
               </div>
-              <div>
-                <img src={Arrow} className="Arrow" alt="Arrow Icon" />
+              <div className="Project_img">
+                <img
+                  src={Project4}
+                  className="Arrow32"
+                  alt="Stadia Bluetooth Project"
+                />
               </div>
             </div>
-            <div className="Project_img">
-              <img
-                src={Project1}
-                className="Arrow32"
-                alt="Stadia Bluetooth Project"
-              />
-            </div>
-          </div>
-        </div>
+          </div>{" "}
+        </Link>
       </div>
 
       <div className="container-footer">

@@ -57,7 +57,7 @@ function Navbar() {
                   />
                 </a>
                 <a
-                  href="#"
+                  href="https://drive.google.com/file/d/167oQtkvzh5bpspC_XLpRthUL3fq0th1F/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="chip-socials w-inline-block"
