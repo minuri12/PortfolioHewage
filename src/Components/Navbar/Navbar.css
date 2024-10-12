@@ -289,3 +289,11 @@ a {
     display: flex;
   }
 }
+
+@media (max-width: 646px) {
+  .nav-pill-wrapper {
+    margin-left: 300px;
+    margin-right: 0px;
+    justify-content: right;
+  }
+}
