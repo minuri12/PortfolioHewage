@@ -240,21 +240,21 @@ a {
   display: none;
 }
 
-@media (max-width: 1220px) {
+@media only screen and (max-width: 1220px) {
   .nav-pill-wrapper {
     margin-left: 150px;
     margin-right: 150px;
   }
 }
 
-@media (max-width: 1078px) {
+@media only screen and (max-width: 1078px) {
   .nav-pill-wrapper {
     margin-left: 100px;
     margin-right: 100px;
   }
 }
 
-@media (max-width: 890px) {
+@media only screen and (max-width: 890px) {
   .chip-socials-wrapper {
     display: none;
   }
@@ -264,9 +264,40 @@ a {
     height: 50px;
     display: flex;
   }
+
+  .mobile-popup-menu {
+    z-index: 1000;
+    grid-row-gap: 4px;
+    -webkit-backdrop-filter: blur(100px);
+    backdrop-filter: blur(100px);
+    background-color: #000000f8;
+    border: 1px solid #f2f2f22d;
+    border-radius: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 160px;
+    padding: 8px;
+    display: none;
+    position: fixed;
+    inset: 88px 24px auto auto;
+    overflow: hidden;
+    box-shadow: 0 10px 30px #2020204d;
+  }
+  .popup-menu-item {
+    grid-column-gap: 4px;
+    color: white;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-self: stretch;
+    align-items: center;
+    padding: 12px 14px;
+    text-decoration: none;
+    transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: flex;
+  }
 }
 
-@media (max-width: 482px) {
+@media only screen and (max-width: 482px) {
   .text-logo {
     display: none;
   }

@@ -11,6 +11,12 @@ function Navbar() {
   const isWorkPage = location.pathname === "/Work";
   const isInfoPage = location.pathname === "/Info";
 
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!isDropdownOpen);
+  };
+
   return (
     <div className="section-nav">
       <div className="Navbar">
@@ -42,9 +48,55 @@ function Navbar() {
         </div>
 
         <div className="nav-pill pil2">
-          <div className="nav-toggle work w-inline-block ">
-            <div className="text-nav-toggle ">@</div>
+          <div
+            className="nav-toggle work w-inline-block "
+            onClick={toggleDropdown}
+          >
+            <div className="text-nav-toggle">@</div>
           </div>
+          {/* Dropdown Menu */}
+          {isDropdownOpen && (
+            <div>
+              <div
+                data-w-id="947649b5-efd3-c77d-d5e9-ca6f678434b6"
+                className="mobile-popup-menu"
+                style={{
+                  display: "flex",
+                  opacity: 1,
+                  transform: "translate3d(0px, 0px, 0px)",
+                }}
+              >
+                <a
+                  href="https://www.linkedin.com/in/perrywang0313/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="popup-menu-item w-inline-block"
+                >
+                  <div className="text-popup-menu">LinkedIn</div>
+                  <img
+                    src="https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/644ca61c76573b18898f41f8_icon-open.svg"
+                    loading="lazy"
+                    alt="LinkedIn icon"
+                    className="icon-popup-external"
+                  />
+                </a>
+                <a
+                  href="https://drive.google.com/file/d/1glSWjnrV-IyQ88KOpVmDkepkmAOQBzbp/view?usp=share_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="popup-menu-item w-inline-block"
+                >
+                  <div className="text-popup-menu">Resume</div>
+                  <img
+                    src="https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/644ca61c76573b18898f41f8_icon-open.svg"
+                    loading="lazy"
+                    alt="Resume icon"
+                    className="icon-popup-external"
+                  />
+                </a>
+              </div>
+            </div>
+          )}
         </div>
 
         <div className="nav-right-wrapper">
