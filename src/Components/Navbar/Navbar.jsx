@@ -7,13 +7,6 @@ function Navbar() {
   const location = useLocation(); // Correctly call useLocation
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State for mobile menu
 
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false); // Manage dropdown visibility
-
-  // Toggle dropdown function
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen); // Toggle the current state
-  };
-
   // Determine the active section based on the current URL path
   const isWorkPage = location.pathname === "/Work";
   const isInfoPage = location.pathname === "/Info";
@@ -53,26 +46,6 @@ function Navbar() {
             <div className="text-nav-toggle ">@</div>
           </div>
         </div>
-        {isDropdownOpen && (
-          <div className="dropdown-content">
-            <a
-              href="https://www.linkedin.com/in/mshewage/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="dropdown-link"
-            >
-              LinkedIn
-            </a>
-            <a
-              href="https://drive.google.com/file/d/167oQtkvzh5bpspC_XLpRthUL3fq0th1F/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="dropdown-link"
-            >
-              Resume
-            </a>
-          </div>
-        )}
 
         <div className="nav-right-wrapper">
           <div className="chip-socials-wrapper">
