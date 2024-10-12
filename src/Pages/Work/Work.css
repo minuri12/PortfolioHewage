@@ -1020,10 +1020,16 @@ tbody td {
   body {
     padding: 37px;
     justify-content: center;
+    overflow-x: hidden;
   }
 }
 
 @media (max-width: 420px) {
+  body {
+    padding: 37px;
+    justify-content: center;
+    overflow-x: hidden;
+  }
   .main-head {
     font-size: 10px;
   }
