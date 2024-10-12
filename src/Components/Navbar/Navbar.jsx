@@ -64,7 +64,7 @@ function Navbar() {
                 }}
               >
                 <a
-                  href="https://www.linkedin.com/in/perrywang0313/"
+                  href="https://www.linkedin.com/in/mshewage/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="popup-menu-item w-inline-block"

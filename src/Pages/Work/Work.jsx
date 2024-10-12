@@ -58,7 +58,7 @@ function Work() {
         animate={{ opacity: 1, y: 0 }} // animate to full opacity and original position
         transition={{ duration: 0.8, ease: "easeOut" }} // control speed and easing
       >
-        <div>
+        <div className="First">
           <div className="main-head">
             Solving real-world problems through elegant
           </div>
@@ -387,13 +387,20 @@ function Work() {
       <br />
       <br />
       <br />
-      <div className="part_one second">
+      <motion.div
+        className="part_one second"
+        initial={{ opacity: 0, y: 50 }} // start with 0 opacity and below the screen
+        animate={{ opacity: 1, y: 0 }} // animate to full opacity and original position
+        transition={{ duration: 3.0, ease: "easeOut" }} // control speed and easing
+      >
         <div className="row">
-          <div className="text-section contact">
+          <div className="imgholder">
+            <img src={Minuri3} className="Minuri2" alt="Logo" />
+          </div>
+          <div className="text-section">
             <div className="head_name">
               How I can help <span>you?</span>
             </div>
-
             <div className="description seconDes">
               Let’s collaborate to create something exceptional! I'm excited to
               connect over new opportunities in software engineering.
@@ -404,12 +411,8 @@ function Work() {
               </a>
             </div>
           </div>
-
-          <div className="imgholder">
-            <img src={Minuri3} className="Minuri3" alt="Logo" />
-          </div>
         </div>
-      </div>
+      </motion.div>
       <br />
       <br />
       <div

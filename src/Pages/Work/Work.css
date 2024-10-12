@@ -347,6 +347,7 @@ input:checked + .slider {
   justify-content: center; /* This centers the content vertically within the text-section */
   flex: 1;
   margin-right: 20px;
+  margin-left: 80px;
 }
 .imgholder {
   position: relative;
@@ -864,4 +865,139 @@ tbody td {
 
 .logo-block .logomark2 {
   width: 45px;
+}
+
+@media (max-width: 1049px) {
+  .main-head {
+    font-size: 33px;
+  }
+
+  .Date-time-section {
+    font-size: 15px;
+  }
+
+  .Second-head {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 929px) {
+  .main-head {
+    font-size: 20px;
+  }
+
+  .Date-time-section {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1105px) {
+  .main-content {
+    display: grid;
+  }
+
+  .part_two {
+    width: 100%;
+  }
+  .pagecontent {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .projectSection {
+    display: grid;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .Bigtext1 {
+    font-size: 27px;
+  }
+
+  .head_name {
+    font-size: 34px;
+    text-align: center;
+  }
+
+  .seconDes {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 16px;
+    color: #797979;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .Minuri3 {
+    height: 272px;
+    margin-right: -20px;
+    padding-left: 0px;
+  }
+
+  .Minuri2 {
+    padding-right: 0px;
+  }
+
+  .imgholder {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .contact {
+    width: auto;
+  }
+
+  .row {
+    height: auto;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .part_one {
+    height: auto;
+  }
+
+  .sentmailbtn {
+    display: contents;
+  }
+
+  .second::before {
+    background-image: linear-gradient(
+      to top,
+      rgb(0 0 0 / 64%) 5%,
+      rgba(8, 8, 8, 0.568) 35%,
+      rgba(4, 4, 4, 0.158) 60%
+    );
+  }
+
+  .text-section {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .volunteer {
+    width: 139%;
+  }
+}
+
+@media (max-width: 961px) {
+  tbody td {
+    font-size: small;
+  }
+
+  .Bigtext1 {
+    font-size: 23px;
+  }
 }

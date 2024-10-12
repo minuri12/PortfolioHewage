@@ -245,12 +245,20 @@ a {
     margin-left: 150px;
     margin-right: 150px;
   }
+
+  .main-head {
+    font-size: 25px;
+  }
 }
 
 @media only screen and (max-width: 1078px) {
   .nav-pill-wrapper {
     margin-left: 100px;
     margin-right: 100px;
+  }
+
+  .main-head {
+    font-size: 33px;
   }
 }
 
@@ -305,15 +313,5 @@ a {
 
   .mobile-popup-menu img {
     width: 20px;
-  }
-}
-
-@media only screen and (max-width: 482px) {
-  .text-logo {
-    display: none;
-  }
-
-  .text-underlogo {
-    display: none;
   }
 }
