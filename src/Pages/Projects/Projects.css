@@ -255,8 +255,8 @@ body {
 
 @media (max-width: 458px) {
   .cover {
-    width: 400px;
-    height: 362px;
+    width: 80%;
+    height: 80%;
   }
 
   .container-overview {
