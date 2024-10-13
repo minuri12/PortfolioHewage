@@ -261,6 +261,11 @@ body {
     height: 330px;
   }
 
+  .pro1 {
+    width: 100%;
+    border-radius: 15px;
+  }
+
   .container-overview {
     display: flex;
     flex-direction: column;

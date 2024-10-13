@@ -254,9 +254,9 @@ function Projects() {
             <div className="project-card-outline2">
               <div className="CardHead">
                 <div>
-                  <div className="text-projectcard-title">Nexo</div>
+                  <div className="text-projectcard-title">ShopSense</div>
                   <div className="text-projectcard-description">
-                    E-commerce Platform
+                    Tap it Shop it
                   </div>
                 </div>
                 <div>
