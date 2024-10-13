@@ -252,3 +252,31 @@ body {
 .LogoPro {
   display: flex;
 }
+
+@media (max-width: 458px) {
+  .cover {
+    width: 400px;
+    height: 362px;
+  }
+
+  .container-overview {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+
+  .double-column-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .LogoPro {
+    display: ruby;
+  }
+
+  .TitleScreen {
+    text-align: center;
+
+    font-size: 29px;
+  }
+}
