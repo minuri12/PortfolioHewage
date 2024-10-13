@@ -24,7 +24,7 @@ function Progressbar({ value = 0, onComplete, showButton }) {
     <div className="container">
       <div className="logo-block3">
         <div className="LogoText">
-          <div className="text-logo">Minuri Senara</div>
+          <div className="text-logo loading">Minuri Senara</div>
         </div>
       </div>
 
