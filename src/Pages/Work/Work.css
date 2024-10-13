@@ -175,6 +175,7 @@ input:checked + .slider {
   background-image: url("../../Assets/Sky.jpg");
   will-change: var(--framer-will-change-override, transform);
   overflow: hidden;
+  overflow-x: visible;
 }
 
 .part_two::after {
@@ -318,6 +319,7 @@ input:checked + .slider {
 
 .volunteer {
   width: 90%;
+  overflow-x: hidden;
 }
 
 .VolExperiance {
@@ -356,7 +358,7 @@ input:checked + .slider {
 }
 
 .Minuri2 {
-  padding-top: 40px;
+  padding-top: 20px;
   width: 260px;
   height: auto;
 
@@ -436,6 +438,10 @@ input:checked + .slider {
   background-size: 200% 200%;
   animation: moveGradient 20s ease infinite; /* Animation */
   overflow: hidden;
+}
+
+.responsetabel {
+  display: none;
 }
 
 /* Hover effect applied to the card container */
@@ -614,6 +620,10 @@ tr:hover {
 .OtherProjectHolder {
   width: 100%;
   overflow-x: auto;
+}
+
+.secondtb {
+  display: none;
 }
 
 table {
@@ -874,10 +884,11 @@ tbody td {
 
   .Date-time-section {
     font-size: 15px;
+    text-align: left;
   }
 
   .Second-head {
-    font-size: 25px;
+    font-size: 18px;
   }
 }
 
@@ -888,6 +899,10 @@ tbody td {
 
   .Date-time-section {
     font-size: 13px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: left;
   }
 }
 
@@ -902,11 +917,14 @@ tbody td {
   .pagecontent {
     display: grid;
     justify-content: center;
-    text-align: center;
+    text-align: left;
   }
 
   .projectSection {
-    display: grid;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
   }
 
   .card {
@@ -932,6 +950,7 @@ tbody td {
     color: #797979;
     font-weight: 500;
     text-align: center;
+    text-align: left;
   }
 
   .Minuri3 {
@@ -988,7 +1007,7 @@ tbody td {
   }
 
   .volunteer {
-    width: 139%;
+    width: 473px;
   }
 }
 
@@ -1005,10 +1024,12 @@ tbody td {
 @media (max-width: 893px) {
   .head_name {
     font-size: 32px;
+    line-height: 40px;
+    text-align: left;
   }
 
   .text-footer-copyright {
-    font-size: 13px;
+    font-size: 9px;
   }
 
   .text-under-copyright {
@@ -1031,14 +1052,41 @@ tbody td {
     overflow-x: hidden;
   }
   .main-head {
-    font-size: 10px;
+    font-size: 19px;
   }
 
   .part_one {
     width: -webkit-fill-available;
+    padding: 8%;
   }
 
   .Bigtext1 {
     font-size: 15px;
+    display: none;
+  }
+
+  .bigtextwrap {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .logo-block .logomark2 {
+    margin-left: 58px;
+  }
+  .first_bar {
+    width: 86%;
+  }
+
+  .secondtb {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .secondtb td {
+    display: flex;
+  }
+
+  .firsttb {
+    display: none;
   }
 }

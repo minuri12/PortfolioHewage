@@ -20,7 +20,7 @@ function Navbar() {
   return (
     <div className="section-nav">
       <div className="Navbar">
-        <div className="logo-block">
+        <div className="logo-block Navbarfix">
           <img src={Logo} className="logomark" alt="Logo" />
           <div className="LogoText">
             <div className="text-logo">Minuri Senara</div>
@@ -78,7 +78,7 @@ function Navbar() {
                   />
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/1glSWjnrV-IyQ88KOpVmDkepkmAOQBzbp/view?usp=share_link"
+                  href="https://drive.google.com/file/d/167oQtkvzh5bpspC_XLpRthUL3fq0th1F/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="popup-menu-item w-inline-block"

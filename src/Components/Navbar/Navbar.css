@@ -108,9 +108,8 @@ a {
   z-index: 10;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
   height: 168px;
-  padding-left: 48px;
-  padding-right: 48px;
   display: flex;
+  justify-content: center;
   position: fixed;
   top: 0%;
   bottom: auto;
@@ -118,7 +117,9 @@ a {
   right: 0%;
   opacity: 1;
   align-items: center;
-  justify-content: center;
+
+  margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 .chip-socials-wrapper {
@@ -240,6 +241,17 @@ a {
   display: none;
 }
 
+.Navbarfix {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Navbar {
+  justify-content: space-between;
+}
+
 @media only screen and (max-width: 1220px) {
   .nav-pill-wrapper {
     margin-left: 150px;
@@ -326,7 +338,7 @@ a {
   }
 
   .nav-pill-wrapper {
-    margin-left: 30px;
+    margin-left: 38px;
     margin-right: 30px;
   }
 
