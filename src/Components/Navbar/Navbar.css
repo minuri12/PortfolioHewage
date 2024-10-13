@@ -328,7 +328,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 458px) {
+@media only screen and (max-width: 900px) {
   .text-logo {
     display: none;
   }

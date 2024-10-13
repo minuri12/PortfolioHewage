@@ -1046,7 +1046,7 @@ tbody td {
   }
 }
 
-@media (max-width: 458px) {
+@media (max-width: 900px) {
   body {
     padding: 37px;
     justify-content: center;

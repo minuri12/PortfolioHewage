@@ -268,14 +268,14 @@ function Projects() {
       <br />
       <br />
       <div className="card nextpro card3">
-        <Link to="/Projects4" className="LinkTest">
+        <Link to="/Projects" className="LinkTest">
           <div className="project-card-outline">
             <div className="project-card-outline2">
               <div className="CardHead">
                 <div>
-                  <div className="text-projectcard-title">Nexo</div>
+                  <div className="text-projectcard-title">Trophy</div>
                   <div className="text-projectcard-description">
-                    E-commerce Platform
+                    Non-monetary token-based mobile application.
                   </div>
                 </div>
                 <div>
@@ -284,7 +284,7 @@ function Projects() {
               </div>
               <div className="Project_img">
                 <img
-                  src={Project4}
+                  src={Project1}
                   className="Arrow32"
                   alt="Stadia Bluetooth Project"
                 />

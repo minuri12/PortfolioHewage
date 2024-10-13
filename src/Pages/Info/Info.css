@@ -122,7 +122,7 @@
   z-index: 1; /* Places the gradient above the image */
 }
 
-@media (max-width: 458px) {
+@media (max-width: 900px) {
   .text-hero.info-hero {
     width: 100%;
   }
