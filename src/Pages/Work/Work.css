@@ -958,8 +958,9 @@ tbody td {
     margin-right: -20px;
     padding-left: 0px;
   }
-
   .Minuri2 {
+    height: auto;
+    width: 194px;
     padding-right: 0px;
   }
 
@@ -1052,7 +1053,7 @@ tbody td {
     overflow-x: hidden;
   }
   .main-head {
-    font-size: 19px;
+    font-size: 28px;
   }
 
   .part_one {
@@ -1074,7 +1075,7 @@ tbody td {
     margin-left: 58px;
   }
   .first_bar {
-    width: 86%;
+    width: 99%%;
   }
 
   .secondtb {
