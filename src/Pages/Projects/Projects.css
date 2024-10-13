@@ -279,4 +279,19 @@ body {
 
     font-size: 29px;
   }
+
+  .AboutSec2 {
+    overflow-x: hidden;
+  }
+
+  .AboutSec3 {
+    overflow-x: hidden;
+  }
+
+  .AboutSec4 {
+    overflow-x: hidden;
+  }
+  .AboutSec1 {
+    overflow-x: hidden;
+  }
 }
