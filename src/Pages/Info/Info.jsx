@@ -1,6 +1,7 @@
 import Logo from "../../Assets/Logo.png";
 import { Link, useLocation } from "react-router-dom";
 import "./Info.css";
+
 import Minuri from "../../Assets/Minuri.png";
 import flyers from "../../Assets/flyers.png";
 import Ai from "../../Assets/Ai.png";
@@ -31,6 +32,13 @@ function Info() {
   const isWorkPage = location.pathname === "/Work";
   const isInfoPage = location.pathname === "/Info";
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // State for mobile menu
+
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const toggleDropdown = () => {
+    setDropdownOpen(!isDropdownOpen);
+  };
+
   useEffect(() => {
     document.title = "Info";
   }, {});
@@ -38,67 +46,117 @@ function Info() {
     <div>
       <div className="section-nav">
         <div className="Navbar">
-          <div className="logo-block">
+          <div className="logo-block Navbarfix">
             <img src={Logo} className="logomark" alt="Logo" />
             <div className="LogoText">
               <div className="text-logo">Minuri Senara</div>
               <div className="text-underlogo">Full Stack Developer</div>
             </div>
+          </div>
 
-            <div>
-              <div className="nav-pill-wrapper">
+          <div>
+            <div className="nav-pill-wrapper">
+              {}
+              <div class="nav-indicator-glow info"></div>
+
+              <div className="nav-pill">
                 {}
-                <div class="nav-indicator-glow info"></div>
+                <Link to="/Work" className="nav-toggle work w-inline-block">
+                  <div className="text-nav-toggle">Work</div>
+                </Link>
+                <Link to="/Info" className="nav-toggle w-inline-block">
+                  <div className="text-nav-toggle">Info</div>
+                </Link>
 
-                <div className="nav-pill">
-                  {}
-                  <Link to="/Work" className="nav-toggle work w-inline-block">
-                    <div className="text-nav-toggle">Work</div>
-                  </Link>
-                  <Link to="/Info" className="nav-toggle w-inline-block">
-                    <div className="text-nav-toggle">Info</div>
-                  </Link>
-
-                  <div className="nav-indicator-pill info"></div>
-                </div>
+                <div className="nav-indicator-pill info"></div>
               </div>
+            </div>
+          </div>
 
-              <div className="nav-right-wrapper">
-                <div className="chip-socials-wrapper">
+          <div className="nav-pill pil2">
+            <div
+              className="nav-toggle work w-inline-block "
+              onClick={toggleDropdown}
+            >
+              <div className="text-nav-toggle">@</div>
+            </div>
+            {/* Dropdown Menu */}
+            {isDropdownOpen && (
+              <div>
+                <div
+                  className="mobile-popup-menu"
+                  style={{
+                    display: "flex",
+                  }}
+                >
                   <a
                     href="https://www.linkedin.com/in/mshewage/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="chip-socials w-inline-block"
+                    className="popup-menu-item w-inline-block"
                   >
-                    <div className="text-socialnav">LinkedIn</div>
+                    <div className="text-popup-menu">LinkedIn</div>
                     <img
-                      src="https://assets-global.website-files.com/63dcb6e1a80e9454b630f4c4/63e0b50ea0956f4526968ef1_23-icon-external.svg"
+                      src="https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/644ca61c76573b18898f41f8_icon-open.svg"
                       loading="lazy"
-                      alt="External"
-                      className="icon-external"
+                      alt="LinkedIn icon"
+                      className="icon-popup-external"
                     />
                   </a>
                   <a
-                    href="#"
+                    href="https://drive.google.com/file/d/167oQtkvzh5bpspC_XLpRthUL3fq0th1F/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="chip-socials w-inline-block"
+                    className="popup-menu-item w-inline-block"
                   >
-                    <div className="text-socialnav">Resume</div>
+                    <div className="text-popup-menu">Resume</div>
                     <img
-                      src="https://assets-global.website-files.com/63dcb6e1a80e9454b630f4c4/63e0b50ea0956f4526968ef1_23-icon-external.svg"
+                      src="https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/644ca61c76573b18898f41f8_icon-open.svg"
                       loading="lazy"
-                      alt="External"
-                      className="icon-external"
+                      alt="Resume icon"
+                      className="icon-popup-external"
                     />
                   </a>
                 </div>
               </div>
+            )}
+          </div>
+
+          <div className="nav-right-wrapper">
+            <div className="chip-socials-wrapper">
+              <a
+                href="https://www.linkedin.com/in/mshewage/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="chip-socials w-inline-block"
+              >
+                <div className="text-socialnav">LinkedIn</div>
+                <img
+                  src="https://assets-global.website-files.com/63dcb6e1a80e9454b630f4c4/63e0b50ea0956f4526968ef1_23-icon-external.svg"
+                  loading="lazy"
+                  alt="External"
+                  className="icon-external"
+                />
+              </a>
+              <a
+                href="https://drive.google.com/file/d/167oQtkvzh5bpspC_XLpRthUL3fq0th1F/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="chip-socials w-inline-block"
+              >
+                <div className="text-socialnav">Resume</div>
+                <img
+                  src="https://assets-global.website-files.com/63dcb6e1a80e9454b630f4c4/63e0b50ea0956f4526968ef1_23-icon-external.svg"
+                  loading="lazy"
+                  alt="External"
+                  className="icon-external"
+                />
+              </a>
             </div>
           </div>
         </div>
       </div>
+
       <motion.div
         class="overline-wrapper"
         initial={{ opacity: 0, y: 50 }} // start with 0 opacity and below the screen

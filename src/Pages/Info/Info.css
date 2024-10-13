@@ -121,3 +121,30 @@
   ); /* Adjust gradient colors as needed */
   z-index: 1; /* Places the gradient above the image */
 }
+
+@media (max-width: 458px) {
+  .text-hero.info-hero {
+    width: 100%;
+  }
+
+  .Aboutpart {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .window-outline {
+    margin-right: 0px;
+    width: 100%;
+    margin-bottom: 80px;
+  }
+
+  .Tech {
+    height: auto;
+    width: 45px;
+  }
+
+  .Grapicscard {
+    padding: 8%;
+  }
+}
